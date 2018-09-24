@@ -9,11 +9,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  body { 
+    padding-top: 65px; 
+  }
   .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    background-color: #4fbdcc;
-    color: #ffffff;
+    background-color: #f4f6f9;
+    color: #82D1DD;
     padding: 1% 0;
     font-size: 1.1em;
     border: 0;
@@ -21,15 +24,32 @@
   .navbar-brand {
     float: left;
     min-height: 50px;
-    padding: 0px 15px 5px;
+    max-height: 65px;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+  #navbar-icon {
+    max-height: 50px;
   }
   .navbar-inverse .navbar-nav .active a, navbar-inverse .navbar-nav .active a:focus,
-  .navbar-inverse .navbar-nav .active a:hover {
-    color: #ffffff;
-    background-color: #4fbdcc; 
+  .navbar-inverse .navbar-nav .active a:hover, .navbar-inverse .navbar-nav .active a:visited {
+    color: #82D1DD;
+    background-color: #f4f6f9;
+    font-weight: bold;
+    text-transform: uppercase;
   }
   .navbar-inverse .navbar-nav li a {
-    color: #d5d5d5;
+    color: #000000;
+    text-transform: uppercase;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+  }
+  .navbar-inverse .navbar-nav li a:hover {
+    color: #82D1DD;
+
   }
   .carousel-caption {
     text-transform: uppercase;
@@ -51,9 +71,15 @@
     max-width: 200px;
     margin: 1% auto;
   }
+  .navbar .navbar-header .icon-bar {
+    background-color: #82D1DD;
+  }
+  #myPic {
+    padding-top: 15px;
+  }
   footer {
     width: 100%;
-    background-color: #4fbdcc;
+    background-color: #82D1DD;
     padding: 5%;
     color: #ffffff;
   }
@@ -73,13 +99,19 @@
   }
   iframe {
     padding-top: 15px;
-s  }
+  }
+  h3 {
+    color: #909090;
+  }
 
   @media (max-width: 900px) {
     .fa {
       font-size: 20px;
       padding: 10px;
     }
+  }
+  p a:hover {
+    color: #82D1DD;
   }
 
   @media (max-width: 600px) {
@@ -96,6 +128,13 @@ s  }
   </style>
 
 
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 </head>
 <body>
   <!-- navbar -->
@@ -107,7 +146,7 @@ s  }
           <span class="icon-bar"> </span>
           <span class="icon-bar"> </span>
         </button>
-        <a class="navbar-brand" href="#">Caroline Lachanski</a>
+        <a class="navbar-brand" href="#"><img id="navbar-icon" src="img/logo_noOutline.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav"> <!-- add navbar-right to put to right -->
@@ -157,19 +196,19 @@ s  }
 
   <!-- about me -->
   <div class="container" id="about">
-    <h1>About Me</h1>
     <div class="row">
       <div class="col-md-6">
-        <p>I am pursuing an MSE in <a href="http://cg.cis.upenn.edu/cggt_program.html" target="_blank">Computer Graphics and Game Technology</a> and a BSE in in <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank">Digital Media Design </a>from the University of Pennsylvania, with minors in Fine Arts and Mathematics. I am
-        currently looking for Summer 2019 software internships.</p>  
-        <p>I’m interested in 3D computer graphics, including graphics software development, animation, rendering, virtual reality, game engines, and game design. I’m always looking to learn something new about graphics! </p> 
-        <p>I currently work with the Penn Library Digital Scholarship Team to build a VR application for visualizing archaeological excavation sites and artifacts, with the goal of making them more
+        <h1>About Me</h1>
+        <p align="justify">I am pursuing an MSE in <a href="http://cg.cis.upenn.edu/cggt_program.html" target="_blank">Computer Graphics and Game Technology</a> and a BSE in in <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank">Digital Media Design </a>from the University of Pennsylvania, with minors in Fine Arts and Mathematics. I am currently looking for Summer 2019 software internships. Click 
+          <a href="clach.github.io/img/LachanskiCarolineResume.pdf" target"_blank">here</a> for my resume!</p> 
+        <p align="justify">I’m interested in 3D computer graphics, including graphics software development, animation, rendering, virtual reality, game engines, and game design. I’m always looking to learn something new about graphics! </p> 
+        <p align="justify">I currently work with the Penn Library Digital Scholarship Team to build a VR application for visualizing archaeological excavation sites and artifacts, with the goal of making them more
           accessible to students, other researchers, and interested public alike.</p> 
-        <p>This past summer, I interned at <a href="https://www.strivr.com/" target="_blank">STRIVR</a>, a startup in the Bay Area, where I helped program VR software for immersive soft skills workplace training. </p> 
-        <p>In my free time, I draw, watch movies, read books, and analyze the media I consume. I’m also an avid <a href="https://www.youtube.com/watch?v=yWfsla_Uh80" target="_blank">K-pop</a> fan.</p>
+        <p align="justify">This past summer, I interned at <a href="https://www.strivr.com/" target="_blank">STRIVR</a>, a startup in the Bay Area, where I helped program VR software for immersive soft skills workplace training. </p> 
+        <p align="justify">In my free time, I draw, watch movies, read books, and analyze the media I consume. I’m also an avid K-pop fan.</p>
       </div>
       <div class="col-md-6">
-        <img src="img/me.jpg" class="img-responsive">
+        <img src="img/me.jpg" class="img-responsive" id="myPic">
       </div>
     </div>
   </div> 
@@ -178,7 +217,9 @@ s  }
   <!-- demo reel -->
   <div class="container text-center" id="demo-reel">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-lg-8">
         <h1>Demo Reel</h1>
         <h3>Fall 2018</h3>
         <div class="embed-responsive embed-responsive-16by9">
@@ -189,6 +230,8 @@ s  }
           oallowfullscreen="oallowfullscreen" 
           webkitallowfullscreen="webkitallowfullscreen"></iframe>
         </div>
+      </div>
+      <div class="col-sm-2">
       </div>
     </div>
   </div> 
@@ -221,6 +264,13 @@ s  }
     </div>
   </footer>
   <!-- end of contact -->
+
+  <script type="text/javascript">
+$( '.navbar .navbar-nav a' ).on( 'click', function () {
+  $( '.navbar .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+  $( this ).parent( 'li' ).addClass( 'active' );
+});
+  </script>
 
 </body>
 </html>
