@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   body { 
-    padding-top: 65px; 
+    padding-top: 80px; 
   }
   .navbar {
     margin-bottom: 0;
@@ -23,8 +23,7 @@
   }
   .navbar-brand {
     float: left;
-    min-height: 50px;
-    max-height: 65px;
+    height: 55px;
     padding-top: 0px;
     padding-left: 15px;
     padding-right: 5px;
@@ -42,14 +41,13 @@
   .navbar-inverse .navbar-nav li a {
     color: #000000;
     text-transform: uppercase;
-    -webkit-transition: color 0.5s ease;
-    -moz-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    transition: color 0.5s ease;
+    -webkit-transition: color 0.35s ease;
+    -moz-transition: color 0.35s ease;
+    -o-transition: color 0.35s ease;
+    transition: color 0.35s ease;
   }
   .navbar-inverse .navbar-nav li a:hover {
     color: #82D1DD;
-
   }
   .carousel-caption {
     text-transform: uppercase;
@@ -70,6 +68,10 @@
   #icon {
     max-width: 200px;
     margin: 1% auto;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
   }
   .navbar .navbar-header .icon-bar {
     background-color: #82D1DD;
@@ -113,6 +115,18 @@
   p a:hover {
     color: #82D1DD;
   }
+  #about {
+    padding-top: 65px;
+  }
+  #demo-reel {
+    padding-top: 65px;
+  }
+  #portfolio {
+    padding-top: 65px;
+  }
+  #contact {
+    padding-top: 65px;
+  }
 
   @media (max-width: 600px) {
     .carousel-caption {
@@ -127,7 +141,6 @@
   }
   </style>
 
-
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -136,6 +149,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
   <!-- navbar -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -146,7 +160,7 @@
           <span class="icon-bar"> </span>
           <span class="icon-bar"> </span>
         </button>
-        <a class="navbar-brand" href="#"><img id="navbar-icon" src="img/logo_noOutline.png"></a>
+        <a class="navbar-brand" href="#"><img id="navbar-icon" src="img/logo.png" onmouseover="this.src='img/logo_alt3.png';" onmouseout="this.src='img/logo.png';"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav"> <!-- add navbar-right to put to right -->
@@ -270,6 +284,7 @@ $( '.navbar .navbar-nav a' ).on( 'click', function () {
   $( '.navbar .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
   $( this ).parent( 'li' ).addClass( 'active' );
 });
+
   </script>
 
 </body>
