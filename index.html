@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lightbox.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -128,6 +129,147 @@
     padding-top: 65px;
   }
 
+  .gallery-preview {
+    padding-top: 80px;
+    padding-bottom: 120px; 
+  }
+
+  .image-link {
+    border-radius: 8px;
+     display:block;
+     width: 200px;
+     height: 200px;
+     line-height: 200px;
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-transition: opacity 0.5s ease;
+     -moz-transition: opacity 0.5s ease;
+     -o-transition: opacity 0.5s ease;
+     transition: opacity 0.5s ease;
+     position: relative;
+     transform: translate(-50%, -50%);
+     top: 50%;
+     left: 50%;
+     opacity: 0.6;
+  }
+
+.image-link:link {
+     text-decoration: none; 
+     color: white;
+     text-align: center;
+     font-size: 18px;
+     letter-spacing: 3px;
+ }
+
+ .image-link:visited {
+     text-decoration: none; 
+     color: white;
+     opacity: 0.6;
+ }
+
+  .image-link:hover {
+     opacity:1;
+     text-decoration: none; 
+     color: white;
+ }
+
+ .image-link:active {
+     text-decoration: none; 
+     color: white;
+     opacity: 0.6;
+ }
+
+   #traditional-image-link {
+     background-image: url("img/art/trad4.jpg");
+ }
+
+   #figure-image-link {
+       background-image: url("img/art/fig3.jpg");
+   }
+
+   #digital-image-link {
+       background-image: url("img/art/digital2.png");
+   }
+
+   #idk-image-link {
+       background-image: url("img/red.png");
+   }
+
+ .active-image-link {
+     border-radius: 8px;
+     display:block;
+     width: 200px;
+     height: 200px;
+     line-height: 200px;
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-transition: opacity 0.5s ease;
+     -moz-transition: opacity 0.5s ease;
+     -o-transition: opacity 0.5s ease;
+     transition: opacity 0.5s ease;
+     position: relative;
+     transform: translate(-50%, -50%);
+     top: 50%;
+     left: 50%;
+     border: 1px solid #ddd;
+     opacity: 1;
+ }
+
+.active-image-link:link {
+     text-decoration: none; 
+     color: white;
+     font-size: 18px;
+     letter-spacing: 3px;
+     text-align: center;
+ }
+
+ .active-image-link:visited {
+     text-decoration: none; 
+     color: white;
+ }
+
+ .active-image-link:hover {
+     text-decoration: none; 
+     color: white;
+ }
+
+ .active-image-link:active {
+     text-decoration: none; 
+     color: white;
+ }
+
+ .my-thumbnail {
+    border-radius: 8px;
+    position: relative;
+    width:  200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+  }
+
+  .my-thumbnail:hover {
+    opacity: 0.5;
+  }
+
+  .gallery {
+    padding-top: 20px;
+    padding-bottom: 40px; 
+  }
+
+  .gallery .row {
+    margin-bottom: 15px;
+  }
+
+  .gallery .col {
+    margin-bottom: 20px;
+  }
+
   @media (max-width: 600px) {
     .carousel-caption {
       display: none;
@@ -138,6 +280,7 @@
     h2 {
       font-size: 1.7em;
     }
+  }
   }
   </style>
 
@@ -255,7 +398,246 @@
   <div class="container text-center" id="portfolio">
     <div class="row">
       <h1>Portfolio</h1>
-      <h3>In Progress</h3>
+
+      <!-- gallery preview -->
+      <div class="gallery">
+        <div class="row gallery-preview" >
+            <div class="col-md-3">
+                    <a href="#traditional" class="image-link" id="traditional-image-link" 
+                    data-toggle="collapse">TRADITIONAL</a>
+            </div>
+            <div class="col-md-3">
+                    <a href="#figure" class="image-link" id="figure-image-link" 
+                    data-toggle="collapse">FIGURE</a>
+            </div>
+            <div class="col-md-3">
+                    <a href="#digital" class="image-link" id="digital-image-link" 
+                    data-toggle="collapse">DIGITAL</a>
+            </div>
+            <div class="col-md-3">
+                    <a href="#idk" class="image-link" id="idk-image-link" 
+                    data-toggle="collapse">IDK</a>
+            </div>
+        </div>
+
+
+      <!-- traditional collapsable gallery -->
+      <div class="gallery collapse" id="traditional">
+        <h3> traditional drawing description here </h3>
+        <br>
+        <!-- row 1 -->
+        <div class="row">
+            <div class="col-md-3">
+                    <a href="img/art/trad1.jpg" data-lightbox="1" data-title="My caption">
+                    <img src="img/art/trad1.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/trad2.jpg" data-lightbox="1" data-title="My caption">
+                    <img src="img/art/trad2.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/trad3.jpg" data-lightbox="1" data-title="My caption">
+                    <img src="img/art/trad3.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/trad4.jpg" data-lightbox="1" data-title="My caption">
+                    <img src="img/art/trad4.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+        </div>
+
+        <!-- row 2 -->
+          <div class="row"> 
+            <div class="col-md-3">
+                    <a href="img/art/trad5.jpg" data-lightbox="1" data-title="My caption">
+                    <img src="img/art/trad5.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/trad6.png" data-lightbox="1" data-title="My caption">
+                    <img src="img/art/trad6.png" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/trad7.jpg" data-lightbox="1" data-title="My caption">
+                    <img src="img/art/trad7.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/trad9.jpg" data-lightbox="1" data-title="My caption">
+                    <img src="img/art/trad9.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+        </div>
+        <!-- end of row 2-->
+    </div>
+    <!-- end of traditional collapsable gallery -->
+
+    <!-- figure collapsable gallery -->
+      <div class="gallery collapse" id="figure">
+        <h3> Figure drawing description here </h3>
+        <br>
+        <!-- row 1 -->
+        <div class="row">
+            <div class="col-md-3">
+                    <a href="img/art/fig1.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig1.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig2.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig2.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig3.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig3.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig4.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig4.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+        </div>
+
+        <!-- row 2 -->
+          <div class="row"> 
+            <div class="col-md-3">
+                    <a href="img/art/fig5.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig5.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig6.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig6.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig7.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig7.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig8.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig8.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+        </div>
+        <!-- end of row 2-->
+
+        <!-- row 3 -->
+          <div class="row"> 
+            <div class="col-md-3">
+                    <a href="img/art/fig9.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig9.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig10.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig10.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig11.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig11.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig12.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig12.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+        </div>
+        <!-- end of row 3-->
+
+        <!-- row 4 -->
+          <div class="row"> 
+            <div class="col-md-3">
+                    <a href="img/art/fig13.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig13.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig14.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig14.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig15.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig15.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+        <!-- end of row 4-->
+
+    </div>
+    <!-- end of figure collapsable gallery -->
+
+    <!-- digital collapsable gallery -->
+      <div class="gallery collapse" id="digital">
+        <h3> digital description here </h3>
+        <br>
+        <!-- row 1 -->
+        <div class="row">
+            <div class="col-md-3">
+                    <a href="img/art/digital1.png" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/digital1.png" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/digital2.png" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/digital2.png" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig3.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig3.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig4.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig4.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+        </div>
+
+        <!-- row 2 -->
+          <div class="row"> 
+            <div class="col-md-3">
+                    <a href="img/art/fig5.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig5.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig6.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig6.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig7.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig7.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+            <div class="col-md-3">
+                    <a href="img/art/fig8.jpg" data-lightbox="2" data-title="My caption">
+                    <img src="img/art/fig8.jpg" class="my-thumbnail">
+                    </a>
+            </div>
+        </div>
+        <!-- end of row 2-->
+
+    </div>
+    <!-- end of digital collapsable gallery -->
+
+
+  </div>
+
     </div>
   </div> 
   <!-- end of art portfolio-->
@@ -280,12 +662,33 @@
   <!-- end of contact -->
 
   <script type="text/javascript">
-$( '.navbar .navbar-nav a' ).on( 'click', function () {
-  $( '.navbar .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
-  $( this ).parent( 'li' ).addClass( 'active' );
+$('.navbar .navbar-nav a').on('click', function () {
+  $('.navbar .navbar-nav').find('li.active').removeClass('active');
+  $(this).parent('li').addClass('active');
+});
+
+$('.image-link').on('click', function () {
+  $(document).find('.gallery .collapse').collapse('hide');
+  if ($(this).hasClass('active-image-link')) {
+    $(this).removeClass('active-image-link');
+    $(this).addClass('image-link');
+  } else if ($(this).hasClass('image-link')) {
+    $('.gallery-preview').find('.active-image-link').addClass('image-link');
+    $('.gallery-preview').find('.active-image-link').removeClass('active-image-link');
+    $(this).addClass('active-image-link');
+    $(this).removeClass('image-link');
+  }
 });
 
   </script>
-
+<script src="js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      //'fadeDuration': 500,
+      //'imageFadeDuration': 500,
+      'showImageNumberLabel': false,
+      'wrapAround': true
+    })
+</script>
 </body>
 </html>
