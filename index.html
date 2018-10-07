@@ -4,6 +4,10 @@
   <title>Caroline Lachanski</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#82D1DD">
+  <meta name="description" content="Caroline Lachanski's website">
+  <meta name="keywords" content="caroline lachanski, computer graphics, 3d graphics, university of pennsylvania,
+  digital media design, game design, c++, java, programmer, vr, ar, unity, coding, penn">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/lightbox.css">
@@ -11,7 +15,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   body { 
-    padding-top: 80px; 
+    padding-top: 75px; 
   }
   .navbar {
     margin-bottom: 0;
@@ -31,6 +35,10 @@
   }
   #navbar-icon {
     max-height: 50px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   .navbar-inverse .navbar-nav .active a, navbar-inverse .navbar-nav .active a:focus,
   .navbar-inverse .navbar-nav .active a:hover, .navbar-inverse .navbar-nav .active a:visited {
@@ -50,18 +58,15 @@
   .navbar-inverse .navbar-nav li a:hover {
     color: #82D1DD;
   }
+  .navbar-toggle {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
   .carousel-caption {
     text-transform: uppercase;
-  }
-  .btn {
-    font-size: 18px;
-    color: #ffffff;
-    padding: 12px 22px;
-    background-color: #4fbdcc;
-    border: 2px solid #ffffff;
-  }
-  .btn:hover {
-    background-color: #ffffff;
+    letter-spacing: 5px;
   }
   .container {
     margin: 4% auto;
@@ -69,16 +74,13 @@
   #icon {
     max-width: 200px;
     margin: 1% auto;
-    -webkit-transition: color 0.5s ease;
-    -moz-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    transition: color 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   .navbar .navbar-header .icon-bar {
     background-color: #82D1DD;
-  }
-  #myPic {
-    padding-top: 15px;
   }
   footer {
     width: 100%;
@@ -92,11 +94,44 @@
     color: #ffffff;
   }
   .fa:hover {
-    color: #d5d5d5;;
+    color: #d5d5d5;
   }
   .fa, .fa:hover, .fa:active, .fa:visited, .fa:focus {
     text-decoration:none;
   }
+  #my-pic {
+      border-radius: 8px;
+  }
+  .button-container {
+    text-align:center;
+  }
+  a.button {
+    text-decoration: none;
+    background-color: white;
+    color: #d5d5d5;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #d5d5d5;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  a.button:hover {
+    background-color: #82D1DD;
+    border-color: #82D1DD;
+    color: white;
+  }
+
   .embed-responsive-item {
     overflow: auto;
   }
@@ -120,16 +155,16 @@
     color: #82D1DD;
   }
   #about {
-    padding-top: 65px;
+    padding-top: 70px;
   }
   #demo-reel {
-    padding-top: 65px;
+    padding-top: 70px;
   }
   #portfolio {
-    padding-top: 65px;
+    padding-top: 70px;
   }
   #contact {
-    padding-top: 65px;
+    padding-top: 70px;
   }
 
   .image-link {
@@ -142,10 +177,10 @@
      background-position: 50% 50%;
      background-repeat: no-repeat;
      background-size: cover;
-     -webkit-transition: opacity 0.5s ease;
-     -moz-transition: opacity 0.5s ease;
-     -o-transition: opacity 0.5s ease;
-     transition: opacity 0.5s ease;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
      position: relative;
      transform: translate(-50%, -50%);
      top: 50%;
@@ -184,7 +219,7 @@
  }
 
    #figure-image-link {
-       background-image: url("img/art/fig3.jpg");
+       background-image: url("img/art/fig2.jpg");
    }
 
    #digital-image-link {
@@ -205,6 +240,7 @@
      background-position: 50% 50%;
      background-repeat: no-repeat;
      background-size: cover;
+     cursor: pointer;
      -webkit-transition: opacity 0.5s ease;
      -moz-transition: opacity 0.5s ease;
      -o-transition: opacity 0.5s ease;
@@ -269,6 +305,11 @@
   [class*="col-"] {
         margin-bottom: 15px;
   }
+  @media (min-width: 768px) {
+    #my-pic {
+      margin-top: 70px;
+    }
+  }
 
   @media (max-width: 600px) {
     .carousel-caption {
@@ -302,10 +343,10 @@
           <span class="icon-bar"> </span>
           <span class="icon-bar"> </span>
         </button>
-        <a class="navbar-brand" href="#"><img id="navbar-icon" src="img/logo.png" onmouseover="this.src='img/logo_alt3.png';" onmouseout="this.src='img/logo.png';"></a>
+        <a class="navbar-brand" href="#"><img id="navbar-icon" src="img/logo.png" onmouseover="this.src='img/logo_alt.png';" onmouseout="this.src='img/logo.png';"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav"> <!-- add navbar-right to put to right -->
+        <ul class="nav navbar-nav navbar-right"> <!-- add navbar-right to put to right -->
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#demo-reel">Demo Reel</a></li>
@@ -353,18 +394,23 @@
   <!-- about me -->
   <div class="container" id="about">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <h1>About Me</h1>
-        <p align="justify">I am pursuing an MSE in <a href="http://cg.cis.upenn.edu/cggt_program.html" target="_blank">Computer Graphics and Game Technology</a> and a BSE in in <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank">Digital Media Design </a>from the University of Pennsylvania, with minors in Fine Arts and Mathematics. I am currently looking for Summer 2019 software internships. Click 
-          <a href="clach.github.io/img/LachanskiCarolineResume.pdf" target"_blank">here</a> for my resume!</p> 
+        <p align="justify">I am pursuing an MSE in <a href="http://cg.cis.upenn.edu/cggt_program.html" target="_blank">Computer Graphics and Game Technology</a> and a BSE in in <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank">Digital Media Design </a>from the University of Pennsylvania, with minors in Fine Arts and Mathematics. I am currently looking for Summer 2019 software internships.</p> 
         <p align="justify">I’m interested in 3D computer graphics, including graphics software development, animation, rendering, virtual reality, game engines, and game design. I’m always looking to learn something new about graphics! </p> 
         <p align="justify">I currently work with the Penn Library Digital Scholarship Team to build a VR application for visualizing archaeological excavation sites and artifacts, with the goal of making them more
           accessible to students, other researchers, and interested public alike.</p> 
         <p align="justify">This past summer, I interned at <a href="https://www.strivr.com/" target="_blank">STRIVR</a>, a startup in the Bay Area, where I helped program VR software for immersive soft skills workplace training. </p> 
         <p align="justify">In my free time, I draw, watch movies, read books, and analyze the media I consume. I’m also an avid K-pop fan.</p>
+        <br>
+        <div class="row">
+          <div class="col button-container">
+            <a class="button" href="clach.github.io/img/LachanskiCarolineResume.pdf" target="_blank">Resume</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <img src="img/me.jpg" class="img-responsive" id="myPic">
+      <div class="col-sm-6" id="my-pic-holder">
+        <img src="img/me.jpg" class="img-responsive" id="my-pic">
       </div>
     </div>
   </div> 
@@ -396,7 +442,7 @@
   <!-- art portfolio -->
   <div class="container text-center" id="portfolio">
     <div class="row">
-      <h1>Portfolio</h1>
+      <h1>Art Portfolio</h1>
 
       <!-- gallery preview -->
       <div class="gallery">
@@ -531,23 +577,6 @@
                       <img src="img/art/fig12.jpg" class="my-thumbnail">
                       </a>
               </div>
-              <div class="col-md-3 col-sm-4">
-                      <a href="img/art/fig13.jpg" data-lightbox="2" data-title="">
-                      <img src="img/art/fig13.jpg" class="my-thumbnail">
-                      </a>
-              </div>
-              <div class="col-md-3 col-sm-4">
-                      <a href="img/art/fig14.jpg" data-lightbox="2" data-title="">
-                      <img src="img/art/fig14.jpg" class="my-thumbnail">
-                      </a>
-              </div>
-              <div class="col-md-3 col-sm-4">
-                      <a href="img/art/fig15.jpg" data-lightbox="2" data-title="">
-                      <img src="img/art/fig15.jpg" class="my-thumbnail">
-                      </a>
-              </div>
-              <div class="col-md-3">
-              </div>
           </div>
           <!-- end of row -->
 
@@ -602,6 +631,16 @@
                       </a>
               </div>
               <div class="col-md-3 col-sm-4">
+                      <a href="img/art/digital10.png" data-lightbox="3" data-title="Project for digital design class to turn collected data into wearable object using Processing. 2016.">
+                      <img src="img/art/digital10.png" class="my-thumbnail">
+                      </a>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                      <a href="img/art/digital11.png" data-lightbox="3" data-title="Concept work for personal logo. Goal was to include letters C, V, and L. 2018.">
+                      <img src="img/art/digital11.png" class="my-thumbnail">
+                      </a>
+              </div>
+              <div class="col-md-3 col-sm-4">
                       <a href="img/art/digital8.png" data-lightbox="3" data-title="Illustration for Disney
                       Imaginations Competition (2 of 3). Semi-finalist. 2016.">
                       <img src="img/art/digital8.png" class="my-thumbnail">
@@ -611,16 +650,6 @@
                       <a href="img/art/digital9.png" data-lightbox="3" data-title="Illustration for Disney
                       Imaginations Competition (3 of 3). Semi-finalist. 2016.">
                       <img src="img/art/digital9.png" class="my-thumbnail">
-                      </a>
-              </div>
-              <div class="col-md-3 col-sm-4">
-                      <a href="img/art/digital10.png" data-lightbox="3" data-title="Project for digital design class to turn collected data into wearable object using Processing. 2016.">
-                      <img src="img/art/digital10.png" class="my-thumbnail">
-                      </a>
-              </div>
-              <div class="col-md-3 col-sm-4">
-                      <a href="img/art/digital11.png" data-lightbox="3" data-title="Concept work for personal logo. Goal was to include letters C, V, and L. 2018.">
-                      <img src="img/art/digital11.png" class="my-thumbnail">
                       </a>
               </div>
           </div>
