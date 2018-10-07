@@ -195,16 +195,13 @@ body {
      opacity: 0.6;
 }
  #traditional-image-link {
-     background-image: url("img/art/trad4.jpg");
+     background-image: url("../img/art/trad4.jpg");
 }
  #figure-image-link {
-     background-image: url("img/art/fig2.jpg");
+     background-image: url("../img/art/fig2.jpg");
 }
  #digital-image-link {
-     background-image: url("img/art/digital9.png");
-}
- #idk-image-link {
-     background-image: url("img/red.png");
+     background-image: url("../img/art/digital9.png");
 }
  .active-image-link {
      border-radius: 8px;
