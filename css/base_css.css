@@ -1,0 +1,290 @@
+body {
+     padding-top: 75px;
+}
+ .navbar {
+     margin-bottom: 0;
+     border-radius: 0;
+     background-color: #f4f6f9;
+     color: #82D1DD;
+     padding: 1% 0;
+     font-size: 1.1em;
+     border: 0;
+}
+ .navbar-brand {
+     float: left;
+     height: 55px;
+     padding-top: 0px;
+     padding-left: 15px;
+     padding-right: 5px;
+}
+ #navbar-icon {
+     max-height: 50px;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .navbar-inverse .navbar-nav .active a, navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover, .navbar-inverse .navbar-nav .active a:visited {
+     color: #82D1DD;
+     background-color: #f4f6f9;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+ .navbar-inverse .navbar-nav li a {
+     color: #000000;
+     text-transform: uppercase;
+     -webkit-transition: color 0.35s ease;
+     -moz-transition: color 0.35s ease;
+     -o-transition: color 0.35s ease;
+     transition: color 0.35s ease;
+}
+ .navbar-inverse .navbar-nav li a:hover {
+     color: #82D1DD;
+}
+ .navbar-toggle {
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .carousel-caption {
+     text-transform: uppercase;
+     letter-spacing: 5px;
+}
+ .carousel-pic {
+     object-fit: cover;
+     width: 100%;
+     max-height: 500px;
+}
+ .container {
+     margin: 4% auto;
+}
+ #icon {
+     max-width: 200px;
+     margin: 1% auto;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .navbar .navbar-header .icon-bar {
+     background-color: #82D1DD;
+}
+ footer {
+     width: 100%;
+     background-color: #82D1DD;
+     padding: 5%;
+     color: #ffffff;
+}
+ .fa {
+     padding: 15px;
+     font-size: 30px;
+     color: #ffffff;
+}
+ .fa:hover {
+     color: #d5d5d5;
+}
+ .fa, .fa:hover, .fa:active, .fa:visited, .fa:focus {
+     text-decoration:none;
+}
+ #my-pic {
+     border-radius: 8px;
+}
+ .button-container {
+     text-align:center;
+}
+ a.button {
+     text-decoration: none;
+     background-color: white;
+     color: #d5d5d5;
+     text-align: center;
+     font-size: 16px;
+     cursor: pointer;
+     border-style: solid;
+     border-width: 3px;
+     border-color: #d5d5d5;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     padding-top: 10px;
+     padding-right: 20px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ a.button:hover {
+     background-color: #82D1DD;
+     border-color: #82D1DD;
+     color: white;
+}
+ .embed-responsive-item {
+     overflow: auto;
+}
+ iframe {
+     padding-top: 15px;
+}
+ h3 {
+     color: #909090;
+}
+ h4 {
+     color: #909090;
+}
+ @media (max-width: 900px) {
+     .fa {
+         font-size: 20px;
+         padding: 10px;
+    }
+}
+ p a:hover {
+     color: #82D1DD;
+}
+ #about {
+     padding-top: 70px;
+}
+ #demo-reel {
+     padding-top: 70px;
+}
+ #portfolio {
+     padding-top: 70px;
+}
+ #contact {
+     padding-top: 70px;
+}
+ .image-link {
+     border-radius: 8px;
+     border-color: transparent;
+     display:block;
+     width: 200px;
+     height: 200px;
+     line-height: 200px;
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+     position: relative;
+     transform: translate(-50%, -50%);
+     top: 50%;
+     left: 50%;
+     opacity: 0.6;
+}
+ .image-link:link {
+     text-decoration: none;
+     color: white;
+     text-align: center;
+     font-size: 18px;
+     letter-spacing: 3px;
+}
+ .image-link:visited {
+     text-decoration: none;
+     color: white;
+     opacity: 0.6;
+}
+ .image-link:hover {
+     opacity:1;
+     text-decoration: none;
+     color: white;
+}
+ .image-link:active {
+     text-decoration: none;
+     color: white;
+     opacity: 0.6;
+}
+ #traditional-image-link {
+     background-image: url("img/art/trad4.jpg");
+}
+ #figure-image-link {
+     background-image: url("img/art/fig2.jpg");
+}
+ #digital-image-link {
+     background-image: url("img/art/digital9.png");
+}
+ #idk-image-link {
+     background-image: url("img/red.png");
+}
+ .active-image-link {
+     border-radius: 8px;
+     border-color: transparent;
+     display:block;
+     width: 200px;
+     height: 200px;
+     line-height: 200px;
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     cursor: pointer;
+     -webkit-transition: opacity 0.5s ease;
+     -moz-transition: opacity 0.5s ease;
+     -o-transition: opacity 0.5s ease;
+     transition: opacity 0.5s ease;
+     position: relative;
+     transform: translate(-50%, -50%);
+     top: 50%;
+     left: 50%;
+     border: 1px solid #ddd;
+     opacity: 1;
+}
+ .active-image-link:link {
+     text-decoration: none;
+     color: white;
+     font-size: 18px;
+     letter-spacing: 3px;
+     text-align: center;
+}
+ .active-image-link:visited {
+     text-decoration: none;
+     color: white;
+}
+ .active-image-link:hover {
+     text-decoration: none;
+     color: white;
+}
+ .active-image-link:active {
+     text-decoration: none;
+     color: white;
+}
+ .my-thumbnail {
+     border-radius: 8px;
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-transition: opacity 0.5s ease;
+     -moz-transition: opacity 0.5s ease;
+     -o-transition: opacity 0.5s ease;
+     transition: opacity 0.5s ease;
+}
+ .my-thumbnail:hover {
+     opacity: 0.5;
+}
+ .gallery-preview {
+     margin-top: 120px;
+}
+ .gallery-row {
+     margin-bottom: 15px;
+}
+ [class*="col-"] {
+     margin-bottom: 15px;
+}
+ @media (min-width: 768px) {
+     #my-pic {
+         margin-top: 70px;
+    }
+}
+ @media (max-width: 600px) {
+     .carousel-caption {
+         display: none;
+    }
+     #icon: {
+         max-width: 150px;
+    }
+     h2 {
+         font-size: 1.7em;
+    }
+}
