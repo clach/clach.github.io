@@ -55,6 +55,13 @@ body {
      object-fit: cover;
      width: 100%;
      max-height: 500px;
+     min-height: 500px;
+}
+@media (max-width: 600px) {
+  .carousel-pic {
+    max-height: 300px;
+    min-height: 300px;
+  }
 }
  .container {
      margin: 4% auto;
@@ -201,7 +208,7 @@ body {
      background-image: url("../img/art/fig2.jpg");
 }
  #digital-image-link {
-     background-image: url("../img/art/digital9.png");
+     background-image: url("../img/art/digital12.png");
 }
  .active-image-link {
      border-radius: 8px;
