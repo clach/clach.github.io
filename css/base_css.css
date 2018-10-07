@@ -276,6 +276,9 @@ body {
  [class*="col-"] {
      margin-bottom: 15px;
 }
+#my-pic {
+         margin-top: 50px;
+}
  @media (min-width: 768px) {
      #my-pic {
          margin-top: 70px;
