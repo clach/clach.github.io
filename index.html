@@ -38,7 +38,8 @@
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#demo-reel">Demo Reel</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#art">Art</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -113,7 +114,7 @@
         <h1>Demo Reel</h1>
         <h3>Fall 2018</h3>
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/259615447" 
+          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/295110905" 
           allowfullscreen="allowfullscreen"
           mozallowfullscreen="mozallowfullscreen" 
           msallowfullscreen="msallowfullscreen" 
@@ -127,8 +128,138 @@
   </div> 
   <!-- end of demo reel -->
 
+  <!-- selected projects -->
+  <div class="container text-center" id="projects">
+    <div class="row">
+      <h1>Selected Projects</h1>
+
+      <!-- projects preview -->
+      <div class="gallery">
+        <div class="row gallery-preview" >
+            <div class="col-sm-4 margin-row">
+                    <a href="#path-tracer" class="image-link" id="path-tracer-image-link" 
+                    data-toggle="collapse">PATH TRACER</a>
+            </div>
+            <div class="col-sm-4 margin-row">
+                    <a href="#procedural" class="image-link" id="procedural-image-link" 
+                    data-toggle="collapse">PROCEDURAL</a>
+            </div>
+            <div class="col-sm-4 margin-row">
+                    <a href="#mini-minecraft" class="image-link" id="mini-minecraft-image-link" 
+                    data-toggle="collapse">MINI MINECRAFT</a>
+            </div>
+        </div>
+        <!-- end of gallery projects -->
+
+        <!-- path tracer collapsable -->
+        <div class="gallery collapse" id="path-tracer">
+          <div class="row">
+            <h3 align="justify">Monte Carlo Path Tracer, Spring 2018: C++</h3>
+            <p align="justify">Multi-month implementation of Monte Carlo Path Tracer, including various
+                  integration methods such as direct lighting and global illumination with multiple importance
+                  sampling. Culminated in photon mapper using k-d tree. Implemented additional features
+                  including thin lens camera, ray marching of implicit surfaces, various light sources
+                  (area light, point light, and spotlight) and materials.</p> 
+            <div class="col button-container">
+              <a href="https://github.com/CIS-461-2018/final-project-clach" target="_blank" 
+                class="fa fa-github fa-on-white"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 thumbnail-div">
+              <a href="img/museum.png" data-lightbox="0" data-title="1024x1024. 900 samples per pixel. Thin lens 
+                    camera.">
+                <img src="img/museum_thumb.png" class="my-thumbnail">
+              </a>
+            </div>
+            <div class="col-sm-4 thumbnail-div">
+              <a href="img/tanglecube.png" data-lightbox="0" data-title="400x400. 400 samples per pixel.
+                    Implicit surface and point light.">
+                <img src="img/tanglecube_thumb.png" class="my-thumbnail">
+              </a>
+            </div>
+            <div class="col-sm-4 thumbnail-div">
+              <a href="img/photonMapper.png" data-lightbox="0" data-title="400x400. Photon mapper. 
+              200,000 photons, 0.8 radius.">
+                <img src="img/photonMapper_thumb.png" class="my-thumbnail">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end of path tracer collapsable -->
+
+        <!-- procedurals collapsable -->
+        <div class="gallery collapse" id="procedural"> 
+          <h4>Select assignments from a Spring 2018 procedural graphics course, using TypeScript and WebGL</h4> 
+          <div class="row">
+            <div class="col-sm-3">
+              <h3 align="justify">L-System Cactus</h3>
+              <p align="justify">Assignment to design an L-system. The user can control the number of iterations (string expansions), the rotation of the plant (how much each paddle rotates), the scale of the paddles, and the color of the flowers. Once given a seed string ('0'), the string is expanded a number of times (based on the number of iterations). It then figures out which drawing functions to call, and calls them using the Turtle (drawing functions belong to the Turtle, who keeps track of position, orientation, etc).</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/homework-4-l-systems-clach" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+              <img src="img/lsystem.png" class="img-responsive embedded-image">
+            </div>
+            <div class="col-sm-3">
+              <h3>Noisy Planet</h3>
+              <p align="justify">Assignment to experiment with various noise functions. The planet 
+                  terrain color and height was generated using 3D fractal Brownian motion (FBM). 
+                  The water color was created with recursive Perlin noise, animated to look like waves. The moon 
+                  was textured with summed 3D Perlin noise and 3D Worley noise to create illusion of craters. 
+                  The background color was created with 3D FBM, with star placement controlled by 3D Worley noise.</p> 
+              <img src="img/planet.png" class="img-responsive embedded-image">
+            </div>
+            <div class="col-sm-3">
+              <h3>Realtime Ray Marching of Implicit Surfaces</h3>
+              <p align="justify">Animated scene made entirely in shader. Features realtime ray marching 
+                of implicit surfaces using signed distance functions.</p> 
+              <img src="img/toaster.png" class="img-responsive embedded-image">
+            </div>
+            <div class="col-sm-3">
+              <h3>Interactive Particle System</h3>
+              <p align="justify">The particles' movement is controlled by Euler integration. Their initial position and velocity are randomized; they also have randomized masses. I took a lot of inspiration for their physics from springs and Hooke's Law; for example, I make use of a dampening constant and a k value (from F = kx). The particles are colored based on their distance to the origin, or a target point if there is one. The user can left click to attract particles and right click to repel them. The user can select from several meshes to attract the particles to. If you wish to disperse the particles, you can click disperse which assigns each particle a random velocity. You can also edit the number of particles in the scene.</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/homework-6-particle-system-clach" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+              <img src="img/particles.png" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of procedurals collapsable -->
+
+        <!-- mini minecraft collapsable -->
+        <div class="gallery collapse" id="mini-minecraft">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 align="justify">Mini Minecraft, Fall 2017: C++, OpenGL</h3>
+              <p align="justify">Three person project to develop Minecraft-like game. Implemented 
+                procedurally generated terrain with 2D fractal Brownian motion, raymarching and ray-cube
+                intersections for interaction with environment, A* algorithm to determine movement
+                of non-player character, distance fog, and multithreading in terrain generation.</p> 
+              <div class="row">
+                <div class="col button-container">
+                  <a href="https://github.com/CIS-460-F2017/final-project-mini-minecraft-cad" target="_blank" 
+                    class="fa fa-github fa-on-white"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/minecraft.png" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of mini minecraft collapsable -->
+    </div>
+  <!-- end of gallery -->
+
+    </div>
+  </div> 
+  <!-- end of projects-->
+
   <!-- art portfolio -->
-  <div class="container text-center" id="portfolio">
+  <div class="container text-center" id="art">
     <div class="row">
       <h1>Art Portfolio</h1>
 
@@ -154,7 +285,6 @@
         <div class="gallery collapse" id="traditional">
           <h4>Traditional works made with graphite, charcoal, pastels, India ink, and acrylic paint</h4>
           <br>
-          <!-- row 1 -->
           <div class="row gallery-row">
               <div class="col-md-3 col-sm-4 thumbnail-div">
                       <a href="img/art/trad1.jpg" data-lightbox="1" data-title="2016.">
@@ -266,8 +396,6 @@
                       </a>
               </div>
           </div>
-          <!-- end of row -->
-
       </div>
       <!-- end of figure collapsable gallery -->
 
@@ -366,7 +494,7 @@
         <a href="clach.github.io/img/LachanskiCarolineResume.pdf" target="_blank" class="fa fa-file-text"></a>
         <a href="https://www.linkedin.com/in/caroline-lachanski-a3929b138/" target="_blank" class="fa fa-linkedin"></a>
         <a href="https://github.com/clach" target="_blank" class="fa fa-github"></a>
-        <a href="https://vimeo.com/259615447" target="_blank" class="fa fa-film"></a>
+        <a href="https://vimeo.com/295110905" target="_blank" class="fa fa-film"></a>
       </div>
       <div class="col-sm-4">
       </div>

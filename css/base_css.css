@@ -132,9 +132,6 @@ body {
  iframe {
      padding-top: 15px;
 }
- h3 {
-     color: #909090;
-}
  h4 {
      color: #909090;
 }
@@ -153,7 +150,10 @@ body {
  #demo-reel {
      padding-top: 70px;
 }
- #portfolio {
+#projects {
+     padding-top: 70px;
+}
+ #art {
      padding-top: 70px;
 }
  #contact {
@@ -209,6 +209,15 @@ body {
 }
  #digital-image-link {
      background-image: url("../img/art/digital12_thumb.png");
+}
+ #path-tracer-image-link {
+     background-image: url("../img/tanglecube_thumb.png");
+}
+ #procedural-image-link {
+     background-image: url("../img/lsystem_thumb.png");
+}
+ #mini-minecraft-image-link {
+     background-image: url("../img/minecraft_thumb.png");
 }
  .active-image-link {
      border-radius: 8px;
@@ -294,4 +303,17 @@ body {
      h2 {
          font-size: 1.7em;
     }
+}
+.fa-on-white {
+     color: #d5d5d5;
+}
+.fa-on-white:hover {
+     color: #82D1DD;
+}
+.embedded-image {
+     max-height: 300px;
+     border-radius: 8px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
 }
