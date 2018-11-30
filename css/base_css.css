@@ -95,7 +95,6 @@ body {
      text-decoration:none;
 }
  #my-pic {
-     border-radius: 8px;
 }
  .button-container {
      text-align:center;
@@ -160,7 +159,6 @@ body {
      padding-top: 70px;
 }
  .image-link {
-     border-radius: 8px;
      border-color: transparent;
      display:block;
      width: 200px;
@@ -220,7 +218,6 @@ body {
      background-image: url("../img/minecraft_thumb.png");
 }
  .active-image-link {
-     border-radius: 8px;
      border-color: transparent;
      display:block;
      width: 200px;
@@ -261,7 +258,6 @@ body {
      color: white;
 }
  .my-thumbnail {
-     border-radius: 8px;
      width: 200px;
      height: 200px;
      object-fit: cover;
@@ -312,7 +308,6 @@ body {
 }
 .embedded-image {
      max-height: 300px;
-     border-radius: 8px;
      display: block;
      margin-left: auto;
      margin-right: auto;
