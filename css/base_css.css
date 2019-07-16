@@ -1,5 +1,5 @@
 body {
-     padding-top: 75px;
+     padding-top: 0px;
 }
  .navbar {
      margin-bottom: 0;
@@ -84,8 +84,8 @@ body {
      color: #ffffff;
 }
  .fa {
-     padding: 15px;
-     font-size: 30px;
+     padding: 20px;
+     font-size: 50px;
      color: #ffffff;
 }
  .fa:hover {
@@ -125,6 +125,9 @@ body {
      border-color: #82D1DD;
      color: white;
 }
+li a {
+     letter-spacing: 3px;
+}
  .embed-responsive-item {
      overflow: auto;
 }
@@ -156,7 +159,11 @@ body {
      padding-top: 70px;
 }
  #contact {
-     padding-top: 70px;
+     padding-top: 0px;
+     width: 100%;
+     background-color: #82D1DD;
+     padding: 5%;
+     color: #ffffff;
 }
  .image-link {
      border-color: transparent;
@@ -311,4 +318,20 @@ body {
      display: block;
      margin-left: auto;
      margin-right: auto;
+}
+#name {
+     padding-top: 40px;
+     padding-bottom: 40px;
+     text-decoration: none;
+     color: #82D1DD;
+     font-size: 50px;
+     letter-spacing: 1px;
+     text-align: center;  
+}
+#subtitle {
+     text-decoration: none;
+     color: #909090;
+     font-size: 20px;
+     letter-spacing: 1px;
+     text-align: center;  
 }

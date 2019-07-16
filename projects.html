@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Caroline Lachanski</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#82D1DD">
+  <meta name="description" content="Caroline Lachanski's website">
+  <meta name="keywords" content="caroline lachanski, computer graphics, 3d graphics, university of pennsylvania, digital media design, game design, c++, java, programmer, vr, ar, unity, coding, 
+  upenn, penn">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/base_css.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"> </span>
+          <span class="icon-bar"> </span>
+          <span class="icon-bar"> </span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img id="navbar-icon" src="img/logo.png" onmouseover="this.src='img/logo_alt.png';" onmouseout="this.src='img/logo.png';"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="demo-reel.html">Demo Reel</a></li>
+          <li class="active"><a href="projects.html">Projects</a></li>
+          <li><a href="art.html">Art</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+  <!-- end of navbar -->
+
+  <!-- selected projects -->
+  <div class="container text-center" id="projects">
+    <div class="row">
+      <h1>Selected Projects</h1>
+
+      <!-- projects preview -->
+      <div class="gallery">
+        <div class="row gallery-preview" >
+            <div class="col-sm-4 margin-row">
+                    <a href="#path-tracer" class="image-link" id="path-tracer-image-link" 
+                    data-toggle="collapse">PATH TRACER</a>
+            </div>
+            <div class="col-sm-4 margin-row">
+                    <a href="#procedural" class="image-link" id="procedural-image-link" 
+                    data-toggle="collapse">PROCEDURAL</a>
+            </div>
+            <div class="col-sm-4 margin-row">
+                    <a href="#mini-minecraft" class="image-link" id="mini-minecraft-image-link" 
+                    data-toggle="collapse">MINI MINECRAFT</a>
+            </div>
+        </div>
+        <!-- end of gallery projects -->
+
+        <!-- path tracer collapsable -->
+        <div class="gallery collapse" id="path-tracer">
+          <div class="row">
+            <h3 align="justify">Monte Carlo Path Tracer, Spring 2018: C++</h3>
+            <p align="justify">Multi-month implementation of Monte Carlo Path Tracer, including various
+                  integration methods such as direct lighting and global illumination with multiple importance
+                  sampling. Culminated in photon mapper using k-d tree. Implemented additional features
+                  including thin lens camera, ray marching of implicit surfaces, various light sources
+                  (area light, point light, and spotlight) and materials.</p> 
+            <div class="col button-container">
+              <a href="https://github.com/CIS-461-2018/final-project-clach" target="_blank" 
+                class="fa fa-github fa-on-white"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 thumbnail-div">
+              <a href="img/museum.png" data-lightbox="0" data-title="1024x1024. 900 samples per pixel. Thin lens 
+                    camera.">
+                <img src="img/museum_thumb.png" class="my-thumbnail">
+              </a>
+            </div>
+            <div class="col-sm-4 thumbnail-div">
+              <a href="img/tanglecube.png" data-lightbox="0" data-title="400x400. 400 samples per pixel.
+                    Implicit surface and point light.">
+                <img src="img/tanglecube_thumb.png" class="my-thumbnail">
+              </a>
+            </div>
+            <div class="col-sm-4 thumbnail-div">
+              <a href="img/photonMapper.png" data-lightbox="0" data-title="400x400. Photon mapper. 
+              200,000 photons, 0.8 radius.">
+                <img src="img/photonMapper_thumb.png" class="my-thumbnail">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end of path tracer collapsable -->
+
+        <!-- procedurals collapsable -->
+        <div class="gallery collapse" id="procedural"> 
+          <h4>Select assignments from a Spring 2018 procedural graphics course, using TypeScript and WebGL</h4> 
+          <div class="row">
+            <div class="col-sm-3">
+              <h3 align="justify">L-System Cactus</h3>
+              <p align="justify">Assignment to design an L-system. The user can control the number of iterations (string expansions), the rotation of the plant (how much each paddle rotates), the scale of the paddles, and the color of the flowers. Once given a seed string ('0'), the string is expanded a number of times (based on the number of iterations). It then figures out which drawing functions to call, and calls them using the Turtle (drawing functions belong to the Turtle, who keeps track of position, orientation, etc).</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/homework-4-l-systems-clach" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+              <img src="img/lsystem.png" class="img-responsive embedded-image">
+            </div>
+            <div class="col-sm-3">
+              <h3>Noisy Planet</h3>
+              <p align="justify">Assignment to experiment with various noise functions. The planet 
+                  terrain color and height was generated using 3D fractal Brownian motion (FBM). 
+                  The water color was created with recursive Perlin noise, animated to look like waves. The moon 
+                  was textured with summed 3D Perlin noise and 3D Worley noise to create illusion of craters. 
+                  The background color was created with 3D FBM, with star placement controlled by 3D Worley noise.</p> 
+              <img src="img/planet.png" class="img-responsive embedded-image">
+            </div>
+            <div class="col-sm-3">
+              <h3>Realtime Ray Marching of Implicit Surfaces</h3>
+              <p align="justify">Animated scene made entirely in shader. Features realtime ray marching 
+                of implicit surfaces using signed distance functions.</p> 
+              <img src="img/toaster.png" class="img-responsive embedded-image">
+            </div>
+            <div class="col-sm-3">
+              <h3>Interactive Particle System</h3>
+              <p align="justify">The particles' movement is controlled by Euler integration. Their initial position and velocity are randomized; they also have randomized masses. I took a lot of inspiration for their physics from springs and Hooke's Law; for example, I make use of a dampening constant and a k value (from F = kx). The particles are colored based on their distance to the origin, or a target point if there is one. The user can left click to attract particles and right click to repel them. The user can select from several meshes to attract the particles to. If you wish to disperse the particles, you can click disperse which assigns each particle a random velocity. You can also edit the number of particles in the scene.</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/homework-6-particle-system-clach" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+              <img src="img/particles.png" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of procedurals collapsable -->
+
+        <!-- mini minecraft collapsable -->
+        <div class="gallery collapse" id="mini-minecraft">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 align="justify">Mini Minecraft, Fall 2017: C++, OpenGL</h3>
+              <p align="justify">Three-person project to develop Minecraft-like game. Implemented 
+                procedurally generated terrain with 2D fractal Brownian motion, raymarching and ray-cube
+                intersections for interaction with environment, A* algorithm to determine movement
+                of non-player character, distance fog, and multithreading in terrain generation.</p> 
+              <div class="row">
+                <div class="col button-container">
+                  <a href="https://github.com/CIS-460-F2017/final-project-mini-minecraft-cad" target="_blank" 
+                    class="fa fa-github fa-on-white"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/minecraft.png" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of mini minecraft collapsable -->
+    </div>
+  <!-- end of gallery -->
+
+    </div>
+  </div> 
+  <!-- end of projects-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$('.navbar .navbar-nav a').on('click', function () {
+  $('.navbar .navbar-nav').find('li.active').removeClass('active');
+  $(this).parent('li').addClass('active');
+});
+
+$('.image-link').on('click', function () {
+  $(document).find('.gallery .collapse').collapse('hide');
+  if ($(this).hasClass('active-image-link')) {
+    $(this).removeClass('active-image-link');
+    $(this).addClass('image-link');
+  } else if ($(this).hasClass('image-link')) {
+    $('.gallery-preview').find('.active-image-link').addClass('image-link');
+    $('.gallery-preview').find('.active-image-link').removeClass('active-image-link');
+    $(this).addClass('active-image-link');
+    $(this).removeClass('image-link');
+  }
+});
+
+</script>
+<script src="js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      'wrapAround': true    
+    })
+</script>
+</body>
+</html>
