@@ -158,13 +158,6 @@ li a {
  #art {
      padding-top: 70px;
 }
- #contact {
-     padding-top: 0px;
-     width: 100%;
-     background-color: #82D1DD;
-     padding: 5%;
-     color: #ffffff;
-}
  .image-link {
      border-color: transparent;
      display:block;
@@ -366,4 +359,21 @@ li a {
      font-size: 36px;
      text-transform: uppercase;
      font-weight: bold;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+ #footer {
+     padding-top: 0px;
+     width: 100%;
+     background-color: #82D1DD;
+     padding: 5%;
+     color: #ffffff;
+
+     position: absolute;
+     bottom: 0;
+}
+ #content {
+     padding-bottom: 2.5rem;  
 }
