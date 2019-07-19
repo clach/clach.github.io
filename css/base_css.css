@@ -328,10 +328,42 @@ li a {
      letter-spacing: 1px;
      text-align: center;  
 }
-#subtitle {
+.subtitle {
      text-decoration: none;
      color: #909090;
      font-size: 20px;
      letter-spacing: 1px;
      text-align: center;  
+}
+#logo-full {
+     padding-bottom: 40px;
+     height:200px;
+}
+.header-text {
+     letter-spacing: 5px;
+     text-align: left; 
+     text-decoration: none;
+     color: #909090;
+     font-size: 32px;
+     text-transform: uppercase;
+     font-weight: bold;
+}
+.header-text-center {
+     letter-spacing: 5px;
+     text-align: center; 
+     text-decoration: none;
+     color: #909090;
+     font-size: 32px;
+     text-transform: uppercase;
+     font-weight: bold;
+     padding-bottom: 20px;
+}
+#contact-header {
+     letter-spacing: 5px;
+     text-align: center; 
+     text-decoration: none;
+     color: white;
+     font-size: 36px;
+     text-transform: uppercase;
+     font-weight: bold;
 }

@@ -31,7 +31,7 @@
           <span class="icon-bar"> </span>
           <span class="icon-bar"> </span>
         </button>
-        <a class="navbar-brand" href="index.html"><img id="navbar-icon" src="img/logo.png" onmouseover="this.src='img/logo_alt.png';" onmouseout="this.src='img/logo.png';"></a>
+        <a class="navbar-brand" href="index.html"><img id="navbar-icon" src="img/logo_alt_alt.png" onmouseover="this.src='img/logo.png';" onmouseout="this.src='img/logo_alt_alt.png';"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
@@ -49,11 +49,15 @@
   <!-- selected projects -->
   <div class="container text-center" id="projects">
     <div class="row">
-      <h1>Selected Projects</h1>
+      <p class="header-text-center">Selected Projects</p>
 
       <!-- projects preview -->
       <div class="gallery">
         <div class="row gallery-preview" >
+            <div class="col-sm-4 margin-row">
+                <a href="#mini-minecraft" class="image-link" id="mini-minecraft-image-link" 
+                data-toggle="collapse">MINI MINECRAFT</a>
+            </div>
             <div class="col-sm-4 margin-row">
                     <a href="#path-tracer" class="image-link" id="path-tracer-image-link" 
                     data-toggle="collapse">PATH TRACER</a>
@@ -62,11 +66,8 @@
                     <a href="#procedural" class="image-link" id="procedural-image-link" 
                     data-toggle="collapse">PROCEDURAL</a>
             </div>
-            <div class="col-sm-4 margin-row">
-                    <a href="#mini-minecraft" class="image-link" id="mini-minecraft-image-link" 
-                    data-toggle="collapse">MINI MINECRAFT</a>
-            </div>
         </div>
+      </div>
         <!-- end of gallery projects -->
 
         <!-- path tracer collapsable -->
@@ -108,7 +109,7 @@
 
         <!-- procedurals collapsable -->
         <div class="gallery collapse" id="procedural"> 
-          <h4>Select assignments from a Spring 2018 procedural graphics course, using TypeScript and WebGL</h4> 
+          <p class="subtitle">Select assignments from a Spring 2018 procedural graphics course, using TypeScript and WebGL</p> 
           <div class="row">
             <div class="col-sm-3">
               <h3 align="justify">L-System Cactus</h3>
