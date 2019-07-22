@@ -12,13 +12,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/lightbox.css">
   <link rel="stylesheet" href="css/base_css.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="favicons/site.webmanifest">
-  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+  <!-- favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png?v=xQd4vXoYqR">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png?v=xQd4vXoYqR">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png?v=xQd4vXoYqR">
+<link rel="manifest" href="favicons/site.webmanifest?v=xQd4vXoYqR">
+<link rel="mask-icon" href="favicons/safari-pinned-tab.svg?v=xQd4vXoYqR" color="#5bbad5">
+<link rel="shortcut icon" href="favicons/favicon.ico?v=xQd4vXoYqR">
 <meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="favicons/browserconfig.xml?v=xQd4vXoYqR">
 <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
@@ -31,7 +36,7 @@
           <span class="icon-bar"> </span>
           <span class="icon-bar"> </span>
         </button>
-        <a class="navbar-brand" href="index.html"><img id="navbar-icon" src="img/logo_alt_alt.png" onmouseover="this.src='img/logo.png';" onmouseout="this.src='img/logo_alt_alt.png';"></a>
+        <a class="navbar-brand" href="index.html"><img id="navbar-icon" src="img/logo_alt.png" onmouseover="this.src='img/logo.png';" onmouseout="this.src='img/logo_alt.png';"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
@@ -54,62 +59,116 @@
       <!-- projects preview -->
       <div class="gallery">
         <div class="row gallery-preview" >
-            <div class="col-sm-4 margin-row">
-                <a href="#mini-minecraft" class="image-link" id="mini-minecraft-image-link" 
-                data-toggle="collapse">MINI MINECRAFT</a>
-            </div>
-            <div class="col-sm-4 margin-row">
+            <div class="col-sm-3 margin-row">
                     <a href="#path-tracer" class="image-link" id="path-tracer-image-link" 
                     data-toggle="collapse">PATH TRACER</a>
             </div>
-            <div class="col-sm-4 margin-row">
+            <div class="col-sm-3 margin-row">
+                    <a href="#wfc" class="image-link" id="wfc-image-link" 
+                    data-toggle="collapse">WFC</a>
+            </div>
+            <div class="col-sm-3 margin-row">
                     <a href="#procedural" class="image-link" id="procedural-image-link" 
                     data-toggle="collapse">PROCEDURAL</a>
             </div>
+            <div class="col-sm-3 margin-row">
+                <a href="#crystal-caves" class="image-link" id="crystals-image-link" 
+                data-toggle="collapse">CAVE EXPLORER</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                <a href="#terrain-shaper" class="image-link" id="terrain-shaper-image-link" 
+                data-toggle="collapse">MAYA PLUGINS</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                <a href="#mini-minecraft" class="image-link" id="mini-minecraft-image-link" 
+                data-toggle="collapse">MINI MINECRAFT</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                    <a href="#mini-maya" class="image-link" id="mini-maya-image-link" 
+                    data-toggle="collapse">MINI MAYA</a>
+            </div>
         </div>
-      </div>
         <!-- end of gallery projects -->
 
         <!-- path tracer collapsable -->
         <div class="gallery collapse" id="path-tracer">
           <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
             <h3 align="justify">Monte Carlo Path Tracer: C++ (Spring 2018)</h3>
-            <p align="justify">Multi-month implementation of Monte Carlo Path Tracer, including various
+            <p align="justify">Multi-month implementation of a Monte Carlo Path Tracer, including various
                   integration methods such as direct lighting and global illumination with multiple importance
                   sampling. Culminated in photon mapper using k-d tree. Implemented additional features
                   including thin lens camera, ray marching of implicit surfaces, various light sources
                   (area light, point light, and spotlight) and materials.</p> 
-            <div class="col button-container">
-              <a href="https://github.com/CIS-461-2018/final-project-clach" target="_blank" 
-                class="fa fa-github fa-on-white"></a>
             </div>
+          <div class="col-sm-2">
+         </div>
           </div>
           <div class="row">
             <div class="col-sm-4 thumbnail-div">
-              <a href="img/museum.png" data-lightbox="0" data-title="1024x1024. 900 samples per pixel. Thin lens 
+              <a href="img/projects/museum.png" data-lightbox="0" data-title="1024x1024. 900 samples per pixel. Thin lens 
                     camera.">
-                <img src="img/museum_thumb.png" class="my-thumbnail">
+                <img src="img/projects/museum_thumb.png" class="my-thumbnail">
               </a>
             </div>
             <div class="col-sm-4 thumbnail-div">
-              <a href="img/tanglecube.png" data-lightbox="0" data-title="400x400. 400 samples per pixel.
+              <a href="img/projects/tanglecube.png" data-lightbox="0" data-title="400x400. 400 samples per pixel.
                     Implicit surface and point light.">
-                <img src="img/tanglecube_thumb.png" class="my-thumbnail">
+                <img src="img/projects/tanglecube_thumb.png" class="my-thumbnail">
               </a>
             </div>
             <div class="col-sm-4 thumbnail-div">
-              <a href="img/photonMapper.png" data-lightbox="0" data-title="400x400. Photon mapper. 
+              <a href="img/projects/photonMapper.png" data-lightbox="0" data-title="400x400. Photon mapper. 
               200,000 photons, 0.8 radius.">
-                <img src="img/photonMapper_thumb.png" class="my-thumbnail">
+                <img src="img/projects/photonMapper_thumb.png" class="my-thumbnail">
               </a>
             </div>
           </div>
         </div>
         <!-- end of path tracer collapsable -->
 
+        <!-- wfc collapsable -->
+        <div class="gallery collapse" id="wfc">
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
+              <h3 align="justify">Wave Function Collapse: C++, OpenGL (Spring 2019)</h3>
+              <p align="justify">A C++, voxel-based implementation of <a href="https://github.com/mxgmn/WaveFunctionCollapse">Wave Function Collapse</a> (skip to 2:47 in the video below for the demo). This algorithm takes in a tileset and some adjacency information about those tiles (which tiles can sit next to which, and in what direction.) At the start, the cells of output NxNxN grid can potentially contain any tile (you can think of each cell containing a superposition of all tiles). On each iteration, the grid cell with the lowest entropy (essentially the smallest number of potential tiles that can be placed in that cell, with some randomness) is selected, and a valid tile is placed in that cell. This cell has been observed. This entropy or superposition of tile options
+                is visualized as a transparent box in that location. As the number of options decreases, the box gets smaller (see 3:50 in the below video).
+                <br><br>Because filling once cell has an effect on what tiles it's adjacent cells can contain, the observation is propogated, reducing the entropy and potential tiles of adjacent cells. This algorithm continues until all cells have been observed.<br><br>The knots tileset was created by the original author, while the two other tilesets were created by me in MagicaVoxel.</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/WFC" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/333982662" 
+                allowfullscreen="allowfullscreen"
+                mozallowfullscreen="mozallowfullscreen" 
+                msallowfullscreen="msallowfullscreen" 
+                oallowfullscreen="oallowfullscreen" 
+                webkitallowfullscreen="webkitallowfullscreen"></iframe>
+              </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+        </div>
+        <!-- end of wfc collapsable -->
+
         <!-- procedurals collapsable -->
         <div class="gallery collapse" id="procedural"> 
-          <p class="subtitle">Select assignments from a Spring 2018 procedural graphics course, using TypeScript and WebGL</p> 
+          <p class="subtitle">Select assignments from a Spring 2018 procedural graphics course, using TypeScript and WebGL. Click the images to see the demos!</p> 
           <div class="row">
             <div class="col-sm-3">
               <h3 align="justify">L-System Cactus</h3>
@@ -118,7 +177,7 @@
                 <a href="https://github.com/clach/homework-4-l-systems-clach" target="_blank" 
                   class="fa fa-github fa-on-white"></a>
               </div>
-              <img src="img/lsystem.png" class="img-responsive embedded-image">
+              <a href="http://carolinelachanski.com/homework-6-particle-system-clach/" target="_blank"><img src="img/projects/lsystem.png" class="img-responsive embedded-image"></a>
             </div>
             <div class="col-sm-3">
               <h3>Noisy Planet</h3>
@@ -127,49 +186,110 @@
                   The water color was created with recursive Perlin noise, animated to look like waves. The moon 
                   was textured with summed 3D Perlin noise and 3D Worley noise to create illusion of craters. 
                   The background color was created with 3D FBM, with star placement controlled by 3D Worley noise.</p> 
-              <img src="img/planet.png" class="img-responsive embedded-image">
+              <img src="img/projects/planet.png" class="img-responsive embedded-image">
             </div>
             <div class="col-sm-3">
               <h3>Realtime Ray Marching of Implicit Surfaces</h3>
               <p align="justify">Animated scene made entirely in shader. Features realtime ray marching 
                 of implicit surfaces using signed distance functions.</p> 
-              <img src="img/toaster.png" class="img-responsive embedded-image">
+              <img src="img/projects/toaster.png" class="img-responsive embedded-image">
             </div>
             <div class="col-sm-3">
               <h3>Interactive Particle System</h3>
-              <p align="justify">The particles' movement is controlled by Euler integration. Their initial position and velocity are randomized; they also have randomized masses. I took a lot of inspiration for their physics from springs and Hooke's Law; for example, I make use of a dampening constant and a k value (from F = kx). The particles are colored based on their distance to the origin, or a target point if there is one. The user can left click to attract particles and right click to repel them. The user can select from several meshes to attract the particles to. If you wish to disperse the particles, you can click disperse which assigns each particle a random velocity. You can also edit the number of particles in the scene.</p> 
+              <p align="justify">I implemented an interactive particule system in which the particles' movement is controlled by Euler integration. Their initial position and velocity are randomized; they also have randomized masses. I took a lot of inspiration for their physics from springs and Hooke's Law; for example, I make use of dampening and stiffness constants. The particles are colored based on their distance to the origin, or a target point if there is one. The user can left click to attract particles and right click to repel them. The user can also select from several meshes to attract the particles to. If you wish to disperse the particles, you can click disperse which assigns each particle a random velocity. You can also edit the number of particles in the scene.</p> 
               <div class="col button-container">
                 <a href="https://github.com/clach/homework-6-particle-system-clach" target="_blank" 
                   class="fa fa-github fa-on-white"></a>
               </div>
-              <img src="img/particles.png" class="img-responsive embedded-image">
+              <a href="http://carolinelachanski.com/homework-6-particle-system-clach/" target="_blank"><img src="img/projects/particles.png" class="img-responsive embedded-image"></a>
+              
             </div>
           </div>
         </div>
         <!-- end of procedurals collapsable -->
+
+        <!-- crystal caves collapsable -->
+        <div class="gallery collapse" id="crystal-caves">
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
+              <h3 align="justify">VR Cave Explorer: Blender, Unity, C# (Spring 2019)</h3>
+              <p align="justify">Final project for Environmental Animation course. The goal was to research an 
+                interesting technique and use it to create an animation: I chose to explore the rendering of 
+                stereoscopic, 360-video to make animations for a small, immersive, choose-your-own adventure VR game on the Oculus Go. All environments were modeled in Blender, then rendered as 2k stereoscopic, panoramic frames, which were made into animations using Adobe After Effects. The game was assembled using Unity, using the animations as the render textures on a sphere, creating the effect of being surrounded by the environments. The 2D UI assets were made with Adobe Illustrator and Photoshop.<br><br>See the first half of the video for a playthrough in the Oculus Go, and the second half of the video for the rendered animations.</p> 
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/336661247" 
+                allowfullscreen="allowfullscreen"
+                mozallowfullscreen="mozallowfullscreen" 
+                msallowfullscreen="msallowfullscreen" 
+                oallowfullscreen="oallowfullscreen" 
+                webkitallowfullscreen="webkitallowfullscreen"></iframe>
+              </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+        </div>
+        <!-- end of crystal caves collapsable -->
+
+        <!-- terrain shaper collapsable -->
+        <div class="gallery collapse" id="terrain-shaper">
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
+              <h3 align="justify">Terrain Shaper Maya Plugin: C++, MEL, Maya API (Spring 2019)</h3>
+              <p align="justify">A custom Maya node implementation of <a href="https://www.researchgate.net/publication/311361632_Dijkstra-based_Terrain_Generation_Using_Advanced_Weight_Functions">Dijkstra-based Terrain Generation Using Advanced Weight Functions</a>. </p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/TerrainShaperNode" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+        </div>
+        <!-- end of terrain shaper collapsable -->
 
         <!-- mini minecraft collapsable -->
         <div class="gallery collapse" id="mini-minecraft">
           <div class="row">
             <div class="col-sm-6">
               <h3 align="justify">Mini Minecraft: C++, OpenGL (Fall 2017)</h3>
-              <p align="justify">Three-person project to develop Minecraft-like game. Implemented 
-                procedurally generated terrain with 2D fractal Brownian motion, raymarching and ray-cube
-                intersections for interaction with environment, A* algorithm to determine movement
-                of non-player character, distance fog, and multithreading in terrain generation.</p> 
-              <div class="row">
-                <div class="col button-container">
-                  <a href="https://github.com/CIS-460-F2017/final-project-mini-minecraft-cad" target="_blank" 
-                    class="fa fa-github fa-on-white"></a>
-                </div>
-              </div>
+              <p align="justify">Three-person project to develop Minecraft-inspired game. Implemented procedurally generated terrain with 2D fractal Brownian motion, raymarching and ray-cube intersections for interaction with environment, A* algorithm to determine movement of non-player character, distance fog, and multithreading in terrain generation</p> 
             </div>
             <div class="col-sm-6">
-              <img src="img/minecraft.png" class="img-responsive embedded-image">
+              <img src="img/projects/minecraftGif.gif" class="img-responsive embedded-image">
             </div>
           </div>
         </div>
         <!-- end of mini minecraft collapsable -->
+
+         <!-- mini maya collapsable -->
+        <div class="gallery collapse" id="mini-maya">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 align="justify">Mini Maya: C++, OpenGL (Fall 2017)</h3>
+              <p align="justify">Implemented Maya-inspired mesh editor with GUI allowing for import of OBJ files, half-edge mesh manipulations such as
+              face extrusion, Catmull-Clark subdivision, face triangulation, and skeleton skinning</p> 
+            </div>
+            <div class="col-sm-6">
+              <img src="img/projects/miniMaya.gif" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of mini maya collapsable -->
+
+
     </div>
   <!-- end of gallery -->
 

@@ -12,13 +12,13 @@ body {
 }
  .navbar-brand {
      float: left;
-     height: 55px;
+     height: 45px;
      padding-top: 0px;
      padding-left: 15px;
      padding-right: 5px;
 }
  #navbar-icon {
-     max-height: 50px;
+     max-height: 45px;
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
@@ -46,16 +46,6 @@ body {
      -moz-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
      transition: all 0.5s ease;
-}
- .carousel-caption {
-     text-transform: uppercase;
-     letter-spacing: 5px;
-}
- .carousel-pic {
-     object-fit: cover;
-     width: 100%;
-     max-height: 500px;
-     min-height: 500px;
 }
 @media (max-width: 600px) {
   .carousel-pic {
@@ -209,13 +199,25 @@ li a {
      background-image: url("../img/art/digital12_thumb.png");
 }
  #path-tracer-image-link {
-     background-image: url("../img/tanglecube_thumb.png");
+     background-image: url("../img/projects/tanglecube_thumb.png");
 }
  #procedural-image-link {
-     background-image: url("../img/lsystem_thumb.png");
+     background-image: url("../img/projects/lsystem_thumb.png");
 }
  #mini-minecraft-image-link {
-     background-image: url("../img/minecraft_thumb.png");
+     background-image: url("../img/projects/minecraft_thumb.png");
+}
+ #mini-maya-image-link {
+     background-image: url("../img/projects/miniMaya_thumb.png");
+}
+ #crystals-image-link {
+     background-image: url("../img/projects/crystalCavern_thumb.png");
+}
+ #wfc-image-link {
+     background-image: url("../img/projects/wfc_thumb.png");
+}
+ #terrain-shaper-image-link {
+     background-image: url("../img/projects/terrain_thumb.png");
 }
  .active-image-link {
      border-color: transparent;
@@ -370,8 +372,6 @@ li a {
      background-color: #82D1DD;
      padding: 5%;
      color: #ffffff;
-
-     position: absolute;
      bottom: 0;
 }
  #content {
