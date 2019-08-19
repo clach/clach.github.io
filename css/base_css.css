@@ -376,6 +376,9 @@ a img:hover {
      text-transform: uppercase;
      font-weight: bold;
 }
+#contact {
+     padding-top: 70px;
+}
 #page-container {
   position: relative;
   min-height: 100vh;

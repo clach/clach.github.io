@@ -77,7 +77,7 @@
             </div>
             <div class="col-sm-3 margin-row">
                 <a href="#terrain-shaper" class="image-link" id="terrain-shaper-image-link" 
-                data-toggle="collapse">MAYA PLUGIN</a>
+                data-toggle="collapse">MAYA PLUGINS</a>
             </div>
             <div class="col-sm-3 margin-row">
                 <a href="#mini-minecraft" class="image-link" id="mini-minecraft-image-link" 
@@ -135,7 +135,7 @@
             <div class="col-sm-2">
             </div>
             <div class="col-lg-8">
-              <h3 align="justify">Wave Function Collapse: C++, OpenGL (Spring 2019)</h3>
+              <h3 align="justify">Wave Function Collapse: C++, OpenGL, Qt (Spring 2019)</h3>
               <p align="justify">A C++, voxel-based implementation of <a href="https://github.com/mxgmn/WaveFunctionCollapse">Wave Function Collapse</a> (skip to 2:47 in the video below for the demo). This algorithm takes in a tileset and some adjacency information about those tiles (which tiles can sit next to which, and in what direction) and can generate infinite configurations in an NxNxN grid using those tiles. This implementation 
                 featues a build mode, in which the user can place down starting tiles and then run the algorithm. There is also an option to watch 
                 the algorithm run iteratively: at the start, each grid cell contains a transparent cube representing the potential tiles that can be placed in that cell. As the algorithm progresses, the number of valid tile options for a given cell decreases, and the transparent cube in that cell decreases 
@@ -227,9 +227,8 @@
                 <a href="http://carolinelachanski.com/homework-1-noisy-planets-clach/" target="_blank" ><img src="img/projects/planet_thumb.png" class="img-responsive procedural-thumb"></a>
             </div>
             <div class="col-sm-3">
-              <h3>Realtime Ray Marching of Implicit Surfaces</h3>
-              <p align="justify">Animated scene made entirely in the fragment shader. Features real-time ray marching 
-                of implicit surfaces using signed distance functions, domain repetition, and specular reflection. It's also a toaster mobile.</p> 
+              <h3>Realtime Sphere Tracing of Implicit Surfaces</h3>
+              <p align="justify">Animated scene made entirely in the fragment shader. Features real-time sphere tracing of implicit surfaces using signed distance functions, domain repetition, and specular reflection. It's also a toaster mobile.</p> 
                 <div class="col button-container">
                 <a href="https://github.com/clach/homework-2-implicit-surfaces-clach" target="_blank" 
                   class="fa fa-github fa-on-white"></a>
@@ -284,25 +283,63 @@
 
         <!-- maya plugins collapsable -->
         <div class="gallery collapse" id="terrain-shaper">
+          <p class="subtitle">Custom Maya nodes made in Spring 2019 using C++, Python, MEL, and the Maya API</p> 
           <div class="row">
-            <!--
             <div class="col-lg-6">
-                <h3 align="justify">L-System Plugin: C++, Python, MEL, Maya API (Spring 2019)</h3>
-              <p align="justify">fwfownfwo</p> 
-            </div>
-            -->
-            <div class="col-lg-3">
-            </div>
-            <div class="col-lg-6">
-              <h3 align="justify">Terrain Shaper Maya Plugin: C++, MEL, Maya API (Spring 2019)</h3>
-              <p align="justify">A custom Maya node implementation of <a href="https://www.researchgate.net/publication/311361632_Dijkstra-based_Terrain_Generation_Using_Advanced_Weight_Functions">Dijkstra-based Terrain Generation Using Advanced Weight Functions</a>. 
-                Allows for procedural generation of terrain meshes and height maps in Maya using user-defined parameters such as detail maps, weight functions,
-                initial points, and steepness. </p> 
+              <h3 align="justify">Terrain Shaper Plugin</h3>
+              <p align="justify">A custom Maya plugin featuring an implementation of a deformer node based on <a href="https://www.researchgate.net/publication/311361632_Dijkstra-based_Terrain_Generation_Using_Advanced_Weight_Functions">Dijkstra-based Terrain Generation Using Advanced Weight Functions</a>. 
+                Allows for procedural generation of terrain meshes and height maps in Maya using user-defined parameters such as detail maps, weight functions, initial points, and steepness. </p> 
               <div class="col button-container">
                 <a href="https://github.com/clach/TerrainShaperNode" target="_blank" 
                   class="fa fa-github fa-on-white"></a>
               </div>
-            <div class="col-lg-3">
+              <div class="row">
+                <div class="col-lg-6">
+                <img src="img/projects/terrain4.png" class="img-responsive embedded-image">
+                </div>
+                <div class="col-lg-6">
+                <img src="img/projects/terrain2.png" class="img-responsive embedded-image">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                <img src="img/projects/terrain3.png" class="img-responsive embedded-image">
+                </div>
+                <div class="col-lg-6">
+                <img src="img/projects/terrain1.png" class="img-responsive embedded-image">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+              <h3 align="justify">L-System and Random Nodes</h3>
+              <p align="justify">Two custom Maya nodes, an L-system node and a random node, along with a MEL-based menu and commands. The L-system node (Python and SWIG-wrapped C++) allows for the creation of an art-directable L-system creation (with parameters such as angle, grammer, and number of string expansions) given user-selected branch and flower meshes. 
+              <br><br>  
+              The random node (Python) allows for the generation of random points, given the user input of number of points to generate and a range in 3D space within to generate the points. This can be used in conjunction with an instancer node to produce multiple copies of an object (such as an l-system instance) at those points. </p> 
+              <br><br> 
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+              <img src="img/projects/mayaLsystem1.png" class="img-responsive embedded-image">
+              </div>
+              <div class="col-lg-6">
+              <img src="img/projects/mayaLsystem4.png" class="img-responsive embedded-image">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+              <img src="img/projects/mayaLsystem2.png" class="img-responsive embedded-image">
+              </div>
+              <div class="col-lg-6">
+              <img src="img/projects/mayaLsystem3.png" class="img-responsive embedded-image">
+              </div>
+              </div>
+            <div class="row">
+              <div class="col-lg-12">
+              <img src="img/projects/mayaLsystemAndInstancerAndRandom.png" class="img-responsive embedded-image">
+              <p>Use of the L-system node in conjunction with with the random node and an instancer node.</p>
+              </div>
+            </div>
             </div>
             </div>
           </div>
@@ -327,7 +364,7 @@
         <div class="gallery collapse" id="mini-maya">
           <div class="row">
             <div class="col-sm-6">
-              <h3 align="justify">Mini Maya: C++, OpenGL (Fall 2017)</h3>
+              <h3 align="justify">Mini Maya: C++, OpenGL, Qt (Fall 2017)</h3>
               <p align="justify">Implemented Maya-inspired mesh editor with GUI allowing for import of OBJ files, half-edge mesh manipulations such as
               face extrusion, Catmull-Clark subdivision, face triangulation, and skeleton skinning</p> 
             </div>
@@ -345,6 +382,27 @@
     </div>
   </div> 
   <!-- end of projects-->
+
+
+  <!-- contact -->
+  <footer class="container-fluid text-center" id="contact">
+    <p id="contact-header">Contact</p>
+
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-md-6">
+        <a href="mailto:clach@seas.upenn.edu" target="_blank" class="fa fa-envelope"></a>
+        <a href="clach.github.io/img/LachanskiCarolineResume.pdf" target="_blank" class="fa fa-file-text"></a>
+        <a href="https://www.linkedin.com/in/caroline-lachanski/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/clach" target="_blank" class="fa fa-github"></a>
+        <a href="https://vimeo.com/295110905" target="_blank" class="fa fa-vimeo-square"></a>
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+  </footer>
+  <!-- end of contact -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
