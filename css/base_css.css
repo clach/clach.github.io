@@ -216,6 +216,9 @@ li a {
  #wfc-image-link {
      background-image: url("../img/projects/wfc_thumb.png");
 }
+ #cuda-boids-image-link {
+     background-image: url("../img/projects/boids_thumb.png");
+}
  #terrain-shaper-image-link {
      background-image: url("../img/projects/terrain_thumb.png");
 }

@@ -58,10 +58,15 @@
 
       <!-- projects preview -->
       <div class="gallery">
+
         <div class="row gallery-preview" >
             <div class="col-sm-3 margin-row">
                     <a href="#path-tracer" class="image-link" id="path-tracer-image-link" 
                     data-toggle="collapse">PATH TRACER</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                    <a href="#cuda-boids" class="image-link" id="cuda-boids-image-link" 
+                    data-toggle="collapse">CUDA BOIDS</a>
             </div>
             <div class="col-sm-3 margin-row">
                     <a href="#wfc" class="image-link" id="wfc-image-link" 
@@ -72,8 +77,8 @@
                 data-toggle="collapse">MAYA PLUGINS</a>
             </div>
             <div class="col-sm-3 margin-row">
-                    <a href="#procedural" class="image-link" id="procedural-image-link" 
-                    data-toggle="collapse">PROCEDURAL</a>
+                  <a href="#procedural" class="image-link" id="procedural-image-link" 
+                  data-toggle="collapse">PROCEDURAL</a>
             </div>
             <div class="col-sm-3 margin-row">
                 <a href="#crystal-caves" class="image-link" id="crystals-image-link" 
@@ -84,8 +89,8 @@
                 data-toggle="collapse">MINI MINECRAFT</a>
             </div>
             <div class="col-sm-3 margin-row">
-                    <a href="#mini-maya" class="image-link" id="mini-maya-image-link" 
-                    data-toggle="collapse">MINI MAYA</a>
+                  <a href="#mini-maya" class="image-link" id="mini-maya-image-link" 
+                  data-toggle="collapse">MINI MAYA</a>
             </div>
         </div>
         <!-- end of gallery projects -->
@@ -103,8 +108,8 @@
                   including thin lens camera, ray marching of implicit surfaces, various light sources
                   (area light, point light, and spotlight) and materials.</p> 
             </div>
-          <div class="col-sm-2">
-         </div>
+            <div class="col-sm-2">
+            </div>
           </div>
           <div class="row">
             <div class="col-sm-4 thumbnail-div">
@@ -128,6 +133,25 @@
           </div>
         </div>
         <!-- end of path tracer collapsable -->
+
+        <!-- cuda boids collapsable -->
+        <div class="gallery collapse" id="cuda-boids">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 align="justify">Flocking Boids: CUDA, C++ (Fall 2019)</h3>
+              <p align="justify">A GPU parallelized flocking boids simulation based on the Reynolds Boids algorithm, featuring three
+                different implementations.</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/Project1-CUDA-Flocking" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/projects/boids.gif" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of cuda boids collapsable -->
 
         <!-- wfc collapsable -->
         <div class="gallery collapse" id="wfc">
@@ -212,7 +236,7 @@
                   class="fa fa-github fa-on-white"></a>
               </div>
                 <a href="http://carolinelachanski.com/homework-4-l-systems-clach/" target="_blank" ><img src="img/projects/lsystem_thumb.png" class="img-responsive procedural-thumb"></a>
-              </div>
+            </div>
             <div class="col-sm-3">
               <h3>Noisy Planet</h3>
               <p align="justify">Assignment to experiment with various noise functions. The planet 
@@ -223,7 +247,7 @@
                 <div class="col button-container">
                 <a href="https://github.com/clach/homework-1-noisy-planets-clach" target="_blank" 
                   class="fa fa-github fa-on-white"></a>
-              </div>
+                </div>
                 <a href="http://carolinelachanski.com/homework-1-noisy-planets-clach/" target="_blank" ><img src="img/projects/planet_thumb.png" class="img-responsive procedural-thumb"></a>
             </div>
             <div class="col-sm-3">
@@ -232,7 +256,7 @@
                 <div class="col button-container">
                 <a href="https://github.com/clach/homework-2-implicit-surfaces-clach" target="_blank" 
                   class="fa fa-github fa-on-white"></a>
-              </div>
+                </div>
                 <a href="http://carolinelachanski.com/homework-2-implicit-surfaces-clach/" target="_blank" ><img src="img/projects/toaster_thumb.png" class="img-responsive procedural-thumb"></a>
             </div>
             <div class="col-sm-3">
@@ -312,38 +336,37 @@
             </div>
             <div class="col-lg-6">
               <div class="row">
-              <h3 align="justify">L-System and Random Nodes</h3>
-              <p align="justify">Two custom Maya nodes, an L-system node and a random node, along with a MEL-based menu and commands. The L-system node (Python and SWIG-wrapped C++) allows for the creation of an art-directable L-system creation (with parameters such as angle, grammer, and number of string expansions) given user-selected branch and flower meshes. 
-              <br><br>  
-              The random node (Python) allows for the generation of random points, given the user input of number of points to generate and a range in 3D space within to generate the points. This can be used in conjunction with an instancer node to produce multiple copies of an object (such as an l-system instance) at those points. </p> 
-              <br><br> 
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-              <img src="img/projects/mayaLsystem1.png" class="img-responsive embedded-image">
+                <h3 align="justify">L-System and Random Nodes</h3>
+                <p align="justify">Two custom Maya nodes, an L-system node and a random node, along with a MEL-based menu and commands. The L-system node (Python and SWIG-wrapped C++) allows for the creation of an art-directable L-system creation (with parameters such as angle, grammer, and number of string expansions) given user-selected branch and flower meshes. 
+                <br><br>  
+                The random node (Python) allows for the generation of random points, given the user input of number of points to generate and a range in 3D space within to generate the points. This can be used in conjunction with an instancer node to produce multiple copies of an object (such as an l-system instance) at those points. </p> 
+                <br><br> 
               </div>
-              <div class="col-lg-6">
-              <img src="img/projects/mayaLsystem4.png" class="img-responsive embedded-image">
+              <div class="row">
+                <div class="col-lg-6">
+                <img src="img/projects/mayaLsystem1.png" class="img-responsive embedded-image">
+                </div>
+                <div class="col-lg-6">
+                <img src="img/projects/mayaLsystem4.png" class="img-responsive embedded-image">
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-              <img src="img/projects/mayaLsystem2.png" class="img-responsive embedded-image">
+              <div class="row">
+                <div class="col-lg-6">
+                <img src="img/projects/mayaLsystem2.png" class="img-responsive embedded-image">
+                </div>
+                <div class="col-lg-6">
+                <img src="img/projects/mayaLsystem3.png" class="img-responsive embedded-image">
+                </div>
               </div>
-              <div class="col-lg-6">
-              <img src="img/projects/mayaLsystem3.png" class="img-responsive embedded-image">
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="img/projects/mayaLsystemAndInstancerAndRandom.png" class="img-responsive embedded-image">
+                <p>Use of the L-system node in conjunction with with the random node and an instancer node.</p>
+                </div>
               </div>
-              </div>
-            <div class="row">
-              <div class="col-lg-12">
-              <img src="img/projects/mayaLsystemAndInstancerAndRandom.png" class="img-responsive embedded-image">
-              <p>Use of the L-system node in conjunction with with the random node and an instancer node.</p>
-              </div>
-            </div>
             </div>
             </div>
           </div>
-        </div>
         <!-- end of maya plugins collapsable -->
 
         <!-- mini minecraft collapsable -->
@@ -365,8 +388,7 @@
           <div class="row">
             <div class="col-sm-6">
               <h3 align="justify">Mini Maya: C++, OpenGL, Qt (Fall 2017)</h3>
-              <p align="justify">Implemented Maya-inspired mesh editor with GUI allowing for import of OBJ files, half-edge mesh manipulations such as
-              face extrusion, Catmull-Clark subdivision, face triangulation, and skeleton skinning</p> 
+              <p align="justify">Implemented Maya-inspired mesh editor with GUI allowing for import of OBJ files, half-edge mesh manipulations such as face extrusion, Catmull-Clark subdivision, face triangulation, and skeleton skinning</p> 
             </div>
             <div class="col-sm-6">
               <img src="img/projects/miniMaya.gif" class="img-responsive embedded-image">
@@ -375,12 +397,11 @@
         </div>
         <!-- end of mini maya collapsable -->
 
-
     </div>
   <!-- end of gallery -->
 
     </div>
-  </div> 
+  </div>
   <!-- end of projects-->
 
 
