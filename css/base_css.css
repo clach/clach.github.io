@@ -84,8 +84,6 @@ body {
  .fa, .fa:hover, .fa:active, .fa:visited, .fa:focus {
      text-decoration:none;
 }
- #my-pic {
-}
  .button-container {
      text-align:center;
 }
@@ -153,7 +151,7 @@ li a {
      display:block;
      width: 200px;
      height: 200px;
-     line-height: 200px;
+     line-height: 100px;
      background-position: 50% 50%;
      background-repeat: no-repeat;
      background-size: cover;
@@ -219,6 +217,9 @@ li a {
  #cuda-boids-image-link {
      background-image: url("../img/projects/boids_thumb.png");
 }
+ #cuda-path-tracer-image-link {
+     background-image: url("../img/projects/gpuPathTracer_thumb.png");
+}
  #terrain-shaper-image-link {
      background-image: url("../img/projects/terrain_thumb.png");
 }
@@ -227,7 +228,7 @@ li a {
      display:block;
      width: 200px;
      height: 200px;
-     line-height: 200px;
+     line-height: 100px;
      background-position: 50% 50%;
      background-repeat: no-repeat;
      background-size: cover;
@@ -286,14 +287,7 @@ li a {
  [class*="col-"] {
      margin-bottom: 15px;
 }
-#my-pic {
-         margin-top: 50px;
-}
- @media (min-width: 768px) {
-     #my-pic {
-         margin-top: 70px;
-    }
-}
+
  @media (max-width: 600px) {
      .carousel-caption {
          display: none;

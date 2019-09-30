@@ -40,10 +40,9 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="demo-reel.html">Demo Reel</a></li>
-          <li class="active"><a href="projects.html">Projects</a></li>
+          <li class="active"><a href="projects.html">Code</a></li>
           <li><a href="art.html">Art</a></li>
         </ul>
       </div>
@@ -61,12 +60,16 @@
 
         <div class="row gallery-preview" >
             <div class="col-sm-3 margin-row">
-                    <a href="#path-tracer" class="image-link" id="path-tracer-image-link" 
-                    data-toggle="collapse">PATH TRACER</a>
+                    <a href="#cuda-path-tracer" class="image-link" id="cuda-path-tracer-image-link" 
+                    data-toggle="collapse">CUDA PATH TRACER</a>
             </div>
             <div class="col-sm-3 margin-row">
                     <a href="#cuda-boids" class="image-link" id="cuda-boids-image-link" 
                     data-toggle="collapse">CUDA BOIDS</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                    <a href="#path-tracer" class="image-link" id="path-tracer-image-link" 
+                    data-toggle="collapse">CPU PATH TRACER</a>
             </div>
             <div class="col-sm-3 margin-row">
                     <a href="#wfc" class="image-link" id="wfc-image-link" 
@@ -95,13 +98,32 @@
         </div>
         <!-- end of gallery projects -->
 
-        <!-- path tracer collapsable -->
+        <!-- cuda path tracer collapsable -->
+        <div class="gallery collapse" id="cuda-path-tracer">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 align="left">GPU Monte Carlo Path Tracer: CUDA, C++ (Fall 2019)</h3>
+              <p align="justify">A GPU parallelized Monte Carlo path tracer.
+               See more images at the GitHub link.</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/Project3-CUDA-Path-Tracer" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/projects/skull_10000samp.png" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of cuda path tracer collapsable -->
+
+        <!-- cpu path tracer collapsable -->
         <div class="gallery collapse" id="path-tracer">
           <div class="row">
             <div class="col-sm-2">
             </div>
             <div class="col-lg-8">
-            <h3 align="justify">Monte Carlo Path Tracer: C++ (Spring 2018)</h3>
+            <h3 align="justify">CPU Monte Carlo Path Tracer: C++ (Spring 2018)</h3>
             <p align="justify">Multi-month implementation of a Monte Carlo Path Tracer, including various
                   integration methods such as direct lighting and global illumination with multiple importance
                   sampling. Culminated in photon mapper using k-d tree. Implemented additional features
@@ -132,13 +154,13 @@
             </div>
           </div>
         </div>
-        <!-- end of path tracer collapsable -->
+        <!-- end of cpu path tracer collapsable -->
 
         <!-- cuda boids collapsable -->
         <div class="gallery collapse" id="cuda-boids">
           <div class="row">
             <div class="col-sm-6">
-              <h3 align="justify">Flocking Boids: CUDA, C++ (Fall 2019)</h3>
+              <h3 align="left">Flocking Boids: CUDA, C++ (Fall 2019)</h3>
               <p align="justify">A GPU parallelized flocking boids simulation based on the Reynolds Boids algorithm, featuring three
                 different implementations.</p> 
               <div class="col button-container">
