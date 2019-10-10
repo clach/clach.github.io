@@ -220,6 +220,9 @@ li a {
  #cuda-path-tracer-image-link {
      background-image: url("../img/projects/gpuPathTracer_thumb.png");
 }
+ #vulkan-grass-image-link {
+     background-image: url("../img/projects/grass_thumb.png");
+}
  #terrain-shaper-image-link {
      background-image: url("../img/projects/terrain_thumb.png");
 }

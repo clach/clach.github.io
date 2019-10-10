@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Caroline Lachanski</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#82D1DD">
+  <meta name="description" content="Caroline Lachanski's website">
+  <meta name="keywords" content="caroline lachanski, computer graphics, 3d graphics, university of pennsylvania, digital media design, game design, c++, java, programmer, vr, ar, unity, coding, 
+  upenn, penn">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/base_css.css">
+
+  <!-- favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png?v=xQd4vXoYqR">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png?v=xQd4vXoYqR">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png?v=xQd4vXoYqR">
+<link rel="manifest" href="favicons/site.webmanifest?v=xQd4vXoYqR">
+<link rel="mask-icon" href="favicons/safari-pinned-tab.svg?v=xQd4vXoYqR" color="#5bbad5">
+<link rel="shortcut icon" href="favicons/favicon.ico?v=xQd4vXoYqR">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="favicons/browserconfig.xml?v=xQd4vXoYqR">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"> </span>
+          <span class="icon-bar"> </span>
+          <span class="icon-bar"> </span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img id="navbar-icon" src="img/logo_alt.png" onmouseover="this.src='img/logo.png';" onmouseout="this.src='img/logo_alt.png';"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="about.html">About</a></li>
+          <li><a href="demo-reel.html">Demo Reel</a></li>
+          <li class="active"><a href="code.html">Code</a></li>
+          <li><a href="art.html">Art</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+  <!-- end of navbar -->
+
+  <!-- selected projects -->
+  <div class="container text-center" id="projects">
+    <div class="row">
+      <p class="header-text-center">Selected Projects</p>
+
+      <!-- projects preview -->
+      <div class="gallery">
+
+        <div class="row gallery-preview" >
+            <div class="col-sm-3 margin-row">
+                    <a href="#cuda-path-tracer" class="image-link" id="cuda-path-tracer-image-link" 
+                    data-toggle="collapse">GPU<br>PATH TRACER</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                    <a href="#cuda-boids" class="image-link" id="cuda-boids-image-link" 
+                    data-toggle="collapse">CUDA<br>BOIDS</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                    <a href="#path-tracer" class="image-link" id="path-tracer-image-link" 
+                    data-toggle="collapse">CPU<br>PATH TRACER</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                    <a href="#vulkan-grass" class="image-link" id="vulkan-grass-image-link" 
+                    data-toggle="collapse">REALTIME<br>VULKAN GRASS</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                    <a href="#wfc" class="image-link" id="wfc-image-link" 
+                    data-toggle="collapse">WAVE FUNCTION<br>COLLAPSE</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                <a href="#terrain-shaper" class="image-link" id="terrain-shaper-image-link" 
+                data-toggle="collapse">MAYA<br>PLUGINS</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                  <a href="#procedural" class="image-link" id="procedural-image-link" 
+                  data-toggle="collapse">PROCEDURAL<br>PROJECTS</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                <a href="#crystal-caves" class="image-link" id="crystals-image-link" 
+                data-toggle="collapse">VR CAVE<br>EXPLORER</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                <a href="#mini-minecraft" class="image-link" id="mini-minecraft-image-link" 
+                data-toggle="collapse">MINI<br>MINECRAFT</a>
+            </div>
+            <div class="col-sm-3 margin-row">
+                  <a href="#mini-maya" class="image-link" id="mini-maya-image-link" 
+                  data-toggle="collapse">MINI<br>MAYA</a>
+            </div>
+        </div>
+        <!-- end of gallery projects -->
+
+        <!-- cuda path tracer collapsable -->
+        <div class="gallery collapse" id="cuda-path-tracer">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 align="left">GPU Monte Carlo Path Tracer: CUDA, C++ (Fall 2019)</h3>
+              <p align="justify">A GPU parallelized Monte Carlo path tracer.
+               See more images at the GitHub link.</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/Project3-CUDA-Path-Tracer" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/projects/skull_10000samp.png" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of cuda path tracer collapsable -->
+
+        <!-- cpu path tracer collapsable -->
+        <div class="gallery collapse" id="path-tracer">
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
+            <h3 align="justify">CPU Monte Carlo Path Tracer: C++ (Spring 2018)</h3>
+            <p align="justify">Multi-month implementation of a Monte Carlo Path Tracer, including various
+                  integration methods such as direct lighting and global illumination with multiple importance
+                  sampling. Culminated in photon mapper using k-d tree. Implemented additional features
+                  including thin lens camera, ray marching of implicit surfaces, various light sources
+                  (area light, point light, and spotlight) and materials.</p> 
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 thumbnail-div">
+              <a href="img/projects/museum.png" data-lightbox="0" data-title="1024x1024. 900 samples per pixel. Thin lens 
+                    camera.">
+                <img src="img/projects/museum_thumb.png" class="my-thumbnail">
+              </a>
+            </div>
+            <div class="col-sm-4 thumbnail-div">
+              <a href="img/projects/tanglecube.png" data-lightbox="0" data-title="400x400. 400 samples per pixel.
+                    Implicit surface and point light.">
+                <img src="img/projects/tanglecube_thumb.png" class="my-thumbnail">
+              </a>
+            </div>
+            <div class="col-sm-4 thumbnail-div">
+              <a href="img/projects/photonMapper.png" data-lightbox="0" data-title="400x400. Photon mapper. 
+              200,000 photons, 0.8 radius.">
+                <img src="img/projects/photonMapper_thumb.png" class="my-thumbnail">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end of cpu path tracer collapsable -->
+
+        <!-- cuda boids collapsable -->
+        <div class="gallery collapse" id="cuda-boids">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 align="left">Flocking Boids: CUDA, C++ (Fall 2019)</h3>
+              <p align="justify">A GPU parallelized flocking boids simulation based on the Reynolds Boids algorithm, featuring three
+                different implementations.</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/Project1-CUDA-Flocking" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/projects/boids.gif" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of cuda boids collapsable -->
+
+        <!-- vulkan grass collapsable -->
+        <div class="gallery collapse" id="vulkan-grass">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 align="left">Real-time Grass Simulation: Vulkan, C++ (Fall 2019)</h3>
+              <p align="justify">An implementation of <a href="https://www.cg.tuwien.ac.at/research/publications/2017/JAHRMANN-2017-RRTG/JAHRMANN-2017-RRTG-draft.pdf">Responsive Real-Time Grass Rendering for General 3D Scenes</a> in Vulkan, featuring a compute pipeline for physics simulation and three culling heuristics and a graphics pipeline utilizing tessellation.</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/Project4-Vulkan-Grass-Rendering" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/projects/grass.gif" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of cuda boids collapsable -->
+
+        <!-- wfc collapsable -->
+        <div class="gallery collapse" id="wfc">
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
+              <h3 align="justify">Wave Function Collapse: C++, OpenGL, Qt (Spring 2019)</h3>
+              <p align="justify">A C++, voxel-based implementation of <a href="https://github.com/mxgmn/WaveFunctionCollapse">Wave Function Collapse</a> (skip to 2:47 in the video below for the demo). This algorithm takes in a tileset and some adjacency information about those tiles (which tiles can sit next to which, and in what direction) and can generate infinite configurations in an NxNxN grid using those tiles. This implementation 
+                featues a build mode, in which the user can place down starting tiles and then run the algorithm. There is also an option to watch 
+                the algorithm run iteratively: at the start, each grid cell contains a transparent cube representing the potential tiles that can be placed in that cell. As the algorithm progresses, the number of valid tile options for a given cell decreases, and the transparent cube in that cell decreases 
+                in size until it disappears completely and is replaced by that cell's observed tile.<br><br>The knots tile set was created by the original author, while the two other tile sets were created by me in MagicaVoxel.<br><br>I'm currently in the processing of updating the project
+                to use instance rendering while also thinking in a more data-oriented mindset.</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/WFC" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-">
+            </div>
+            <div class="col-sm-4">
+              <img src="img/projects/knotsTileset.png" class="img-responsive embedded-image">
+              <p>Knots tileset</p>
+            </div>
+            <div class="col-sm-4">
+              <img src="img/projects/castleTileset.png" class="img-responsive embedded-image">
+              <p>Castle tileset</p>
+            </div>
+            <div class="col-sm-4">
+              <img src="img/projects/buildingTileset.png" class="img-responsive embedded-image">
+              <p>Building tileset</p>
+            </div>
+            <div class="col-sm-1">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-5">
+              <img src="img/projects/castleBuild.gif" class="img-responsive embedded-image">
+              <p>Build mode</p>
+            </div>
+            <div class="col-sm-5">
+              <img src="img/projects/knotsIterative.gif" class="img-responsive embedded-image">
+              <p>Iterative algorithm view</p>
+            </div>
+            <div class="col-sm-1">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/333982662" 
+                allowfullscreen="allowfullscreen"
+                mozallowfullscreen="mozallowfullscreen" 
+                msallowfullscreen="msallowfullscreen" 
+                oallowfullscreen="oallowfullscreen" 
+                webkitallowfullscreen="webkitallowfullscreen"></iframe>
+              </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+        </div>
+        <!-- end of wfc collapsable -->
+
+        <!-- procedurals collapsable -->
+        <div class="gallery collapse" id="procedural"> 
+          <p class="subtitle">Select assignments from a Spring 2018 procedural graphics course, using TypeScript and WebGL. Click the images to see the demos!</p> 
+          <div class="row">
+            <div class="col-sm-3">
+              <h3>Cactus L-System</h3>
+              <p align="justify">An art-directable cactus L-system. The user can control the number of iterations (string expansions), the rotation of the plant (how much each paddle rotates), the scale of the paddles, and the color of the flowers. Once given a seed string ('0'), the string is expanded a number of times (based on the number of iterations). It then figures out which drawing functions to call, and calls them using the Turtle (who keeps track of position, orientation, etc).</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/homework-4-l-systems-clach" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+                <a href="http://carolinelachanski.com/homework-4-l-systems-clach/" target="_blank" ><img src="img/projects/lsystem_thumb.png" class="img-responsive procedural-thumb"></a>
+            </div>
+            <div class="col-sm-3">
+              <h3>Noisy Planet</h3>
+              <p align="justify">Assignment to experiment with various noise functions. The planet 
+                  terrain color and height was generated using 3D fractal Brownian motion (FBM). 
+                  The water color was created with recursive Perlin noise, animated to look like waves. The moon 
+                  was textured with summed 3D Perlin noise and 3D Worley noise to create illusion of craters. 
+                  The background color was created with 3D FBM, with star placement controlled by 3D Worley noise.</p> 
+                <div class="col button-container">
+                <a href="https://github.com/clach/homework-1-noisy-planets-clach" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+                </div>
+                <a href="http://carolinelachanski.com/homework-1-noisy-planets-clach/" target="_blank" ><img src="img/projects/planet_thumb.png" class="img-responsive procedural-thumb"></a>
+            </div>
+            <div class="col-sm-3">
+              <h3>Realtime Sphere Tracing of Implicit Surfaces</h3>
+              <p align="justify">Animated scene made entirely in the fragment shader. Features real-time sphere tracing of implicit surfaces using signed distance functions, domain repetition, and specular reflection. It's also a toaster mobile.</p> 
+                <div class="col button-container">
+                <a href="https://github.com/clach/homework-2-implicit-surfaces-clach" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+                </div>
+                <a href="http://carolinelachanski.com/homework-2-implicit-surfaces-clach/" target="_blank" ><img src="img/projects/toaster_thumb.png" class="img-responsive procedural-thumb"></a>
+            </div>
+            <div class="col-sm-3">
+              <h3>Interactive Particle System</h3>
+              <p align="justify">An interactive particle system. The particles' movement is controlled by Euler integration. Their initial position and velocity are randomized; they also have randomized masses. I took a lot of inspiration for their physics from springs and Hooke's Law; for example, I make use of dampening and stiffness constants. The particles are colored based on their distance to the origin, or a target point if there is one. The user can left click to attract particles and right click to repel them. The user can also select from several meshes to attract the particles to. If you wish to disperse the particles, you can click disperse which assigns each particle a random velocity. You can also edit the number of particles in the scene.</p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/homework-6-particle-system-clach" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+              <a href="http://carolinelachanski.com/homework-6-particle-system-clach/" target="_blank"><img src="img/projects/particle_thumb.png" class="img-responsive procedural-thumb"></a>              
+            </div>
+          </div>
+        </div>
+        <!-- end of procedurals collapsable -->
+
+        <!-- crystal caves collapsable -->
+        <div class="gallery collapse" id="crystal-caves">
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
+              <h3 align="justify">VR Cave Explorer: Blender, Unity, C# (Spring 2019)</h3>
+              <p align="justify">Final project for Environmental Animation course. The goal was to research an 
+                interesting technique and use it to create an animation: I chose to explore the rendering of 
+                stereoscopic, 360-video to make animations for a small, immersive, choose-your-own adventure VR game on the Oculus Go. All environments were modeled in Blender, then rendered as 2k stereoscopic, panoramic frames, which were made into animations using Adobe After Effects. The game was assembled using Unity, using the animations as the render textures on a sphere, creating the effect of being surrounded by the environments. The 2D UI assets were made with Adobe Illustrator and Photoshop.<br><br>See the first half of the video for a playthrough in the Oculus Go, and the second half of the video for the rendered animations.</p> 
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-lg-8">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/336661247" 
+                allowfullscreen="allowfullscreen"
+                mozallowfullscreen="mozallowfullscreen" 
+                msallowfullscreen="msallowfullscreen" 
+                oallowfullscreen="oallowfullscreen" 
+                webkitallowfullscreen="webkitallowfullscreen"></iframe>
+              </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+        </div>
+        <!-- end of crystal caves collapsable -->
+
+        <!-- maya plugins collapsable -->
+        <div class="gallery collapse" id="terrain-shaper">
+          <p class="subtitle">Custom Maya nodes made in Spring 2019 using C++, Python, MEL, and the Maya API</p> 
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 align="justify">Terrain Shaper Plugin</h3>
+              <p align="justify">A custom Maya plugin featuring an implementation of a deformer node based on <a href="https://www.researchgate.net/publication/311361632_Dijkstra-based_Terrain_Generation_Using_Advanced_Weight_Functions">Dijkstra-based Terrain Generation Using Advanced Weight Functions</a>. 
+                Allows for procedural generation of terrain meshes and height maps in Maya using user-defined parameters such as detail maps, weight functions, initial points, and steepness. </p> 
+              <div class="col button-container">
+                <a href="https://github.com/clach/TerrainShaperNode" target="_blank" 
+                  class="fa fa-github fa-on-white"></a>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                <img src="img/projects/terrain4.png" class="img-responsive embedded-image">
+                </div>
+                <div class="col-lg-6">
+                <img src="img/projects/terrain2.png" class="img-responsive embedded-image">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                <img src="img/projects/terrain3.png" class="img-responsive embedded-image">
+                </div>
+                <div class="col-lg-6">
+                <img src="img/projects/terrain1.png" class="img-responsive embedded-image">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <h3 align="justify">L-System and Random Nodes</h3>
+                <p align="justify">Two custom Maya nodes, an L-system node and a random node, along with a MEL-based menu and commands. The L-system node (Python and SWIG-wrapped C++) allows for the creation of an art-directable L-system creation (with parameters such as angle, grammer, and number of string expansions) given user-selected branch and flower meshes. 
+                <br><br>  
+                The random node (Python) allows for the generation of random points, given the user input of number of points to generate and a range in 3D space within to generate the points. This can be used in conjunction with an instancer node to produce multiple copies of an object (such as an l-system instance) at those points. </p> 
+                <br><br> 
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                <img src="img/projects/mayaLsystem1.png" class="img-responsive embedded-image">
+                </div>
+                <div class="col-lg-6">
+                <img src="img/projects/mayaLsystem4.png" class="img-responsive embedded-image">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                <img src="img/projects/mayaLsystem2.png" class="img-responsive embedded-image">
+                </div>
+                <div class="col-lg-6">
+                <img src="img/projects/mayaLsystem3.png" class="img-responsive embedded-image">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                <img src="img/projects/mayaLsystemAndInstancerAndRandom.png" class="img-responsive embedded-image">
+                <p>Use of the L-system node in conjunction with with the random node and an instancer node.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        <!-- end of maya plugins collapsable -->
+
+        <!-- mini minecraft collapsable -->
+        <div class="gallery collapse" id="mini-minecraft">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 align="justify">Mini Minecraft: C++, OpenGL (Fall 2017)</h3>
+              <p align="justify">Three-person project to develop Minecraft-inspired game. Implemented procedurally generated terrain with 2D fractal Brownian motion, raymarching and ray-cube intersections for interaction with environment, A* algorithm to determine movement of non-player character, distance fog, and multithreading in terrain generation</p> 
+            </div>
+            <div class="col-sm-6">
+              <img src="img/projects/minecraftGif.gif" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of mini minecraft collapsable -->
+
+         <!-- mini maya collapsable -->
+        <div class="gallery collapse" id="mini-maya">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 align="justify">Mini Maya: C++, OpenGL, Qt (Fall 2017)</h3>
+              <p align="justify">Implemented Maya-inspired mesh editor with GUI allowing for import of OBJ files, half-edge mesh manipulations such as face extrusion, Catmull-Clark subdivision, face triangulation, and skeleton skinning</p> 
+            </div>
+            <div class="col-sm-6">
+              <img src="img/projects/miniMaya.gif" class="img-responsive embedded-image">
+            </div>
+          </div>
+        </div>
+        <!-- end of mini maya collapsable -->
+
+    </div>
+  <!-- end of gallery -->
+
+    </div>
+  </div>
+  <!-- end of projects-->
+
+
+  <!-- contact -->
+  <footer class="container-fluid text-center" id="contact">
+    <p id="contact-header">Contact</p>
+
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-md-6">
+        <a href="mailto:clach@seas.upenn.edu" target="_blank" class="fa fa-envelope"></a>
+        <a href="clach.github.io/img/LachanskiCarolineResume.pdf" target="_blank" class="fa fa-file-text"></a>
+        <a href="https://www.linkedin.com/in/caroline-lachanski/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/clach" target="_blank" class="fa fa-github"></a>
+        <a href="https://vimeo.com/298670321" target="_blank" class="fa fa-vimeo-square"></a>
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+  </footer>
+  <!-- end of contact -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$('.navbar .navbar-nav a').on('click', function () {
+  $('.navbar .navbar-nav').find('li.active').removeClass('active');
+  $(this).parent('li').addClass('active');
+});
+
+$('.image-link').on('click', function () {
+  $(document).find('.gallery .collapse').collapse('hide');
+  if ($(this).hasClass('active-image-link')) {
+    $(this).removeClass('active-image-link');
+    $(this).addClass('image-link');
+  } else if ($(this).hasClass('image-link')) {
+    $('.gallery-preview').find('.active-image-link').addClass('image-link');
+    $('.gallery-preview').find('.active-image-link').removeClass('active-image-link');
+    $(this).addClass('active-image-link');
+    $(this).removeClass('image-link');
+  }
+});
+
+</script>
+<script src="js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      'wrapAround': true    
+    })
+</script>
+</body>
+</html>
