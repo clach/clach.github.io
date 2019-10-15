@@ -1,5 +1,6 @@
 body {
      padding-top: 0px;
+     overscroll-behavior: none;
 }
  .navbar {
      margin-bottom: 0;
@@ -395,5 +396,5 @@ a img:hover {
      padding-bottom: 2.5rem;  
 }
  #spacer {
-     padding-bottom: 300px;  
+     padding-bottom: 30px;  
 }
