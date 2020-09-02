@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#82D1DD">
   <meta name="description" content="Caroline Lachanski's website">
-  <meta name="keywords" content="caroline lachanski, computer graphics, 3d graphics, university of pennsylvania, digital media design, game design, c++, java, programmer, vr, ar, unity, coding, 
-  upenn, penn">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="keywords" content="caroline lachanski, computer graphics, 3d graphics, university of pennsylvania, digital media design, game design, c++, java, programmer, vr, ar, unity, coding, penn,
+  upenn, pixar, pixar animation studios, activision, strivr">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Lightbox for image gallery -->
   <link rel="stylesheet" href="css/lightbox.css">
-  <link rel="stylesheet" href="css/base_css.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png?v=xQd4vXoYqR">
@@ -27,96 +31,92 @@
 </head>
 
 <body>
-  <!-- navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"> </span>
-          <span class="icon-bar"> </span>
-          <span class="icon-bar"> </span>
-        </button>
-        <a class="navbar-brand" href="index.html"><img id="navbar-icon" src="img/logo_alt.png" onmouseover="this.src='img/logo.png';" onmouseout="this.src='img/logo_alt.png';"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="header-link"><a href="about.html">About</a></li>
-          <li><a href="demo-reel.html">Demo Reel</a></li>
-          <li><a href="code.html">Code</a></li>
-          <li><a href="art.html">Art</a></li>
-        </ul>
+  <div class="wrapper">
+    <!-- sidebar -->
+    <nav id="sidebar">
+          <div class="sidebar-header">
+              <h3>Caroline Lachanski</h3>
+          </div>
+          <ul class="list-unstyled components">
+              <li class="active">
+                  <a href="index.html">About</a>
+              </li>
+              <li>
+                  <a href="code.html">Code</a>
+              </li>
+              <li>
+                  <a href="art.html">Art</a>
+              </li>
+              <li>
+                <a href="clach.github.io/img/LachanskiCarolineResume.pdf" target="_blank">Resume</a>
+              </li>
+              <li>
+              <div class="row"> 
+                    <a href="mailto:carolinelachanski@gmail.com" target="_blank" class="fa fa-envelope"></a>
+                    <a href="https://www.linkedin.com/in/caroline-lachanski/" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/clach" target="_blank" class="fa fa-github"></a>
+                    <a href="https://vimeo.com/298670321" target="_blank" class="fa fa-vimeo-square"></a>
+                </div>
+              </li>
+          </ul>
+
+    </nav>
+    <!-- end of sidebar -->
+
+    <!-- about me -->
+    <div id="content">
+      <h3>About Me</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <p align="justify">I currently work as a Software Engineering Resident for the GPU team at Pixar Animation Studios. I completed an MSE in <a href="http://cg.cis.upenn.edu/cggt_program.html" target="_blank">Computer Graphics and Game Technology</a> after completing a BSE in <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank">Digital Media Design</a> from the University of Pennsylvania, with minors in Fine Arts and Mathematics.</p> 
+          <p align="justify">I've previously interned with an Activision Central Tech graphics team, where I 
+          learned a lot about game engines, real-time graphics, and graphics profiling and debugging. I also helped integrate a new subdivision surfaces system into the <i>Call of Duty</i> renderer. I've also interned at <a href="https://www.strivr.com/" target="_blank">STRIVR</a>, a startup in the Bay Area, where I programmed VR software in Unity for immersive workplace communications training.</p> 
+          <p align="justify">I’m interested in computer graphics, including but not limited to graphics software development, animation, rendering, proceduralism, and VR/AR. My current side project is teaching myself Houdini!</p> 
+          <p align="justify">And, in my free time, I watch movies, read books, and draw pictures.</p>
+          <br>
+        </div>
+      <div class="col-sm-6" >
+        <img src="img/me.png" id="about-image">
       </div>
     </div>
-  </nav> 
-  <!-- end of navbar -->
+    <!-- end of about me -->
 
-  <!-- intro -->
-  <div class="container text-center" id="demo-reel">
-    <div class="row">
-        <img src="img/logo_full.png" class="img-responsive embedded-image" id="logo-full">
-    </div>
-    <div class="row">
-      <div class="col-sm-2">
-      </div>
-      <div class="col-lg-8">
-        <p class="subtitle">MSE in computer graphics and game tech &&
-        programmer && artist</p>
-      </div>
-      <div class="col-sm-2">
-      </div>
-    </div>
-  </div> 
-  <!-- end of into -->
+  </div>
 
-<div id="spacer">
-</div>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- Lightbox for image gallery -->
+  <script src="js/lightbox.js"></script>
+  <script>
+      lightbox.option({
+        'wrapAround': true    
+      })
+  </script>
 
-  <!-- contact -->
-  <footer class="container-fluid text-center" id="contact">
-    <p id="contact-header">Contact</p>
-    <div class="row">
-      <div class="col-sm-3">
-      </div>
-      <div class="col-md-6">
-        <a href="mailto:clach@seas.upenn.edu" target="_blank" class="fa fa-envelope"></a>
-        <a href="clach.github.io/img/LachanskiCarolineResume.pdf" target="_blank" class="fa fa-file-text"></a>
-        <a href="https://www.linkedin.com/in/caroline-lachanski/" target="_blank" class="fa fa-linkedin"></a>
-        <a href="https://github.com/clach" target="_blank" class="fa fa-github"></a>
-        <a href="https://vimeo.com/298670321" target="_blank" class="fa fa-vimeo-square"></a>
-      </div>
-      <div class="col-sm-3">
-      </div>
-    </div>
-  </footer>
-  <!-- end of contact -->
+  <!-- Custom JavaScript -->
+  <script type="text/javascript">
+    $('.image-link').on('click', function () {
+      $(document).find('.gallery .collapse').collapse('hide');
+      if ($(this).hasClass('active-image-link')) {
+        $(this).removeClass('active-image-link');
+        $(this).addClass('image-link');
+      } else if ($(this).hasClass('image-link')) {
+        $('.gallery-preview').find('.active-image-link').addClass('image-link');
+        $('.gallery-preview').find('.active-image-link').removeClass('active-image-link');
+        $(this).addClass('active-image-link');
+        $(this).removeClass('image-link');
+      }
+    });
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-$('.navbar .navbar-nav a').on('click', function () {
-  $('.navbar .navbar-nav').find('li.active').removeClass('active');
-  $(this).parent('li').addClass('active');
-});
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar, #content').toggleClass('active');
+      $('.collapse.in').toggleClass('in');
+      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
 
-$('.image-link').on('click', function () {
-  $(document).find('.gallery .collapse').collapse('hide');
-  if ($(this).hasClass('active-image-link')) {
-    $(this).removeClass('active-image-link');
-    $(this).addClass('image-link');
-  } else if ($(this).hasClass('image-link')) {
-    $('.gallery-preview').find('.active-image-link').addClass('image-link');
-    $('.gallery-preview').find('.active-image-link').removeClass('active-image-link');
-    $(this).addClass('active-image-link');
-    $(this).removeClass('image-link');
-  }
-});
+  </script>
 
-</script>
-<script src="js/lightbox.js"></script>
-<script>
-    lightbox.option({
-      'wrapAround': true    
-    })
-</script>
 </body>
 </html>
