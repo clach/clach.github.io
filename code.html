@@ -32,7 +32,9 @@
       <!-- sidebar -->
       <nav id="sidebar">
          <div class="sidebar-header">
-            <a href="index.html"><h3>Caroline Lachanski</h3></a>
+            <a href="index.html">
+               <h3>Caroline Lachanski</h3>
+            </a>
          </div>
          <ul class="list-unstyled components">
             <li>
@@ -60,8 +62,7 @@
       <!-- end of sidebar -->
       <!-- selected projects -->
       <div id="content">
-         <h3>
-         Selected Projects</h4>
+         <h3>Selected Projects</h3>
          <p>A selection of graphics programming projects.</p>
          <div class="row">
             <!-- projects preview -->
@@ -90,7 +91,7 @@
                            <div class="col-sm-6">
                               <h4>Real-time Hair Sim and Renderer</h4>
                               <h5>C++, Vulkan (Fall 2019)</h5>
-                              <p align="justify">A group final project implementing a physically-based hair simulation and renderer in Vulkan. Responsible for hair renderering, hair strand tessellation, 
+                              <p>A group final project implementing a physically-based hair simulation and renderer in Vulkan. Responsible for hair renderering, hair strand tessellation, 
                                  geometry shader expansion, PCF shadow mapping.
                               </p>
                               <div class="col button-container">
@@ -112,7 +113,7 @@
                            <div class="col-sm-6">
                               <h4>GPU Monte Carlo Path Tracer</h4>
                               <h5>CUDA, C++ (Fall 2019)</h5>
-                              <p align="justify">A GPU-parallelized Monte Carlo path tracer, featuring glTF mesh loading
+                              <p>A GPU-parallelized Monte Carlo path tracer, featuring glTF mesh loading
                                  with bounding boxes, first bounce caching, depth of field, and various bokeh shapes.
                                  See more images at the GitHub link.
                               </p>
@@ -128,27 +129,30 @@
                      </div>
                   </div>
                   <!-- end of cuda path tracer collapsable -->
-                  <!-- deferred renderer collapsable -->
+
+                  <!-- vulkan grass collapsable -->
                   <div class="collapse" id="deferred-renderer">
                      <div class="gallery">
                         <div class="row">
                            <div class="col-sm-6">
                               <h4>Clustered Deferred and Forward+ Renderers</h4>
                               <h5>JavaScript, WebGL (Fall 2019)</h5>
-                              <p align="justify">A WebGL implementation of clustered deferred and forward+ renderers.
-                              </p>
+                              <p>A WebGL implementation of clusterred deferred and forward plus renderers (with an attempt
+                                at toon shading). Click the image to see a live web demo. </p>
                               <div class="col button-container">
                                  <a href="https://github.com/clach/Project6-WebGL-Clustered-Deferred-Forward-Plus" target="_blank" 
                                     class="fa fa-github fa-on-white"></a>
                               </div>
                            </div>
                            <div class="col-sm-6">
-                              <img src="img/projects/forwardPlus.gif" class="embedded-image">
-                           </div>
+                           <a href="http://carolinelachanski.com/Project6-WebGL-Clustered-Deferred-Forward-Plus/" target="_blank"><img src="img/projects/forwardPlus.gif" class="embedded-image"></a>
+                          </div>
+
                         </div>
                      </div>
                   </div>
-                  <!-- end of deferred renderer collapsable -->
+                  <!-- end of vulkan grass collapsable -->
+                  
                   <!-- vulkan grass collapsable -->
                   <div class="collapse" id="vulkan-grass">
                      <div class="gallery">
@@ -156,7 +160,7 @@
                            <div class="col-sm-6">
                               <h4>Real-time Grass Simulation</h4>
                               <h5>C++, Vulkan (Fall 2019)</h5>
-                              <p align="justify">An implementation of <a href="https://www.cg.tuwien.ac.at/research/publications/2017/JAHRMANN-2017-RRTG/JAHRMANN-2017-RRTG-draft.pdf">Responsive Real-Time Grass Rendering for General 3D Scenes</a> in Vulkan, featuring a compute pipeline for physics simulation and three culling heuristics and a graphics pipeline utilizing tessellation.</p>
+                              <p>An implementation of <a href="https://www.cg.tuwien.ac.at/research/publications/2017/JAHRMANN-2017-RRTG/JAHRMANN-2017-RRTG-draft.pdf">Responsive Real-Time Grass Rendering for General 3D Scenes</a> in Vulkan, featuring a compute pipeline for physics simulation and three culling heuristics and a graphics pipeline utilizing tessellation.</p>
                               <div class="col button-container">
                                  <a href="https://github.com/clach/Project4-Vulkan-Grass-Rendering" target="_blank" 
                                     class="fa fa-github fa-on-white"></a>
@@ -169,6 +173,7 @@
                      </div>
                   </div>
                   <!-- end of vulkan grass collapsable -->
+
                   <div class="col-sm-4 col-lg-3">
                      <a href="#cuda-boids" class="image-link" id="cuda-boids-image-link" 
                         data-toggle="collapse">CUDA<br>BOIDS</a>
@@ -177,10 +182,9 @@
                      <a href="#path-tracer" class="image-link" id="path-tracer-image-link" 
                         data-toggle="collapse">CPU<br>PATH TRACER</a>
                   </div>
-                  
                   <div class="col-sm-4 col-lg-3">
                      <a href="#wfc" class="image-link" id="wfc-image-link" 
-                        data-toggle="collapse">WAVE FUNCTION<br>COLLAPSE</a>
+                        data-toggle="collapse">1 FUNCTION<br>COLLAPSE</a>
                   </div>
                   <div class="col-sm-4 col-lg-3">
                      <a href="#terrain-shaper" class="image-link" id="terrain-shaper-image-link" 
@@ -193,7 +197,7 @@
                            <div class="col-sm-6">
                               <h4>Flocking Boids</h4>
                               <h5>CUDA, C++ (Fall 2019)</h5>
-                              <p align="justify">A GPU parallelized flocking boids simulation based on the Reynolds Boids algorithm, featuring three
+                              <p>A GPU parallelized flocking boids simulation based on the Reynolds Boids algorithm, featuring three
                                  different implementations.
                               </p>
                               <div class="col button-container">
@@ -215,9 +219,9 @@
                            <div class="col-sm-2">
                            </div>
                            <div class="col-lg-8">
-                              <h4 align="justify">CPU Monte Carlo Path Tracer</h4>
+                              <h4>CPU Monte Carlo Path Tracer</h4>
                               <h5>C++ (Spring 2018)</h5>
-                              <p align="justify">Multi-month implementation of a Monte Carlo Path Tracer, including various
+                              <p>Multi-month implementation of a Monte Carlo Path Tracer, including various
                                  integration methods such as direct lighting and global illumination with multiple importance
                                  sampling. Culminated in photon mapper using k-d tree. Implemented additional features
                                  including thin lens camera, ray marching of implicit surfaces, various light sources
@@ -256,7 +260,7 @@
                            <div class="col-sm-6">
                               <h4>Wave Function Collapse</h4>
                               <h5>C++, OpenGL, Qt (Spring 2019)</h5>
-                              <p align="justify">A C++, voxel-based implementation of the Wave Function Collapse algorithm to build 3D procedural structures. Features a build mode in which the user can place starting tiles, and an iterative algorithm view.
+                              <p>A C++, voxel-based implementation of the Wave Function Collapse algorithm to build 3D procedural structures. Features a build mode in which the user can place starting tiles, and an iterative algorithm view.
                               </p>
                               <div class="col button-container">
                                  <a href="https://github.com/clach/WFC" target="_blank" 
@@ -276,8 +280,8 @@
                         <p class="subtitle">Custom Maya nodes made in Spring 2019 using C++, Python, MEL, and the Maya API</p>
                         <div class="row">
                            <div class="col-lg-12">
-                              <h4 align="justify">Terrain Shaper Plugin</h4>
-                              <p align="justify">A custom Maya plugin featuring an implementation of a deformer node based on <a href="https://www.researchgate.net/publication/311361632_Dijkstra-based_Terrain_Generation_Using_Advanced_Weight_Functions">Dijkstra-based Terrain Generation Using Advanced Weight Functions</a>. 
+                              <h4>Terrain Shaper Plugin</h4>
+                              <p>A custom Maya plugin featuring an implementation of a deformer node based on <a href="https://www.researchgate.net/publication/311361632_Dijkstra-based_Terrain_Generation_Using_Advanced_Weight_Functions">Dijkstra-based Terrain Generation Using Advanced Weight Functions</a>. 
                                  Allows for procedural generation of terrain meshes and height maps in Maya using user-defined parameters such as detail maps, weight functions, initial points, and steepness. 
                               </p>
                               <div class="col button-container">
@@ -304,8 +308,8 @@
                         </div>
                         <div class="row">
                            <div class="col-lg-12">
-                              <h4 align="justify">L-System and Random Nodes</h4>
-                              <p align="justify">Two custom Maya nodes, an L-system node and a random node, along with a MEL-based menu and commands. The L-system node (Python and SWIG-wrapped C++) allows for the creation of an art-directable L-system creation (with parameters such as angle, grammer, and number of string expansions) given user-selected branch and flower meshes. 
+                              <h4>L-System and Random Nodes</h4>
+                              <p>Two custom Maya nodes, an L-system node and a random node, along with a MEL-based menu and commands. The L-system node (Python and SWIG-wrapped C++) allows for the creation of an art-directable L-system creation (with parameters such as angle, grammer, and number of string expansions) given user-selected branch and flower meshes. 
                                  <br><br>  
                                  The random node (Python) allows for the generation of random points, given the user input of number of points to generate and a range in 3D space within to generate the points. This can be used in conjunction with an instancer node to produce multiple copies of an object (such as an l-system instance) at those points. 
                               </p>
@@ -357,18 +361,18 @@
                      <div class="gallery">
                         <p class="subtitle">Select assignments from a Spring 2018 procedural graphics course, using TypeScript and WebGL. Click the images to see the demos!</p>
                         <div class="row">
-                           <div class="col-md-6" class="code-projects">
+                           <div class="col-md-6">
                               <h4>Cactus L-System</h4>
-                              <p align="justify">An art-directable cactus L-system. The user can control the number of iterations (string expansions), the rotation of the plant (how much each paddle rotates), the scale of the paddles, and the color of the flowers. Once given a seed string ('0'), the string is expanded a number of times (based on the number of iterations). It then figures out which drawing functions to call, and calls them using the Turtle (who keeps track of position, orientation, etc).</p>
+                              <p>An art-directable cactus L-system. The user can control the number of iterations (string expansions), the rotation of the plant (how much each paddle rotates), the scale of the paddles, and the color of the flowers. Once given a seed string ('0'), the string is expanded a number of times (based on the number of iterations). It then figures out which drawing functions to call, and calls them using the Turtle (who keeps track of position, orientation, etc).</p>
                               <div class="col button-container">
                                  <a href="https://github.com/clach/homework-4-l-systems-clach" target="_blank" 
                                     class="fa fa-github fa-on-white"></a>
                               </div>
                               <a href="http://carolinelachanski.com/homework-4-l-systems-clach/" target="_blank" ><img src="img/projects/lsystem_thumb.png" class="procedural-thumb"></a>
                            </div>
-                           <div class="col-md-6" class="code-projects">
+                           <div class="col-md-6">
                               <h4>Noisy Planet</h4>
-                              <p align="justify">Assignment to experiment with various noise functions. The planet 
+                              <p>Assignment to experiment with various noise functions. The planet 
                                  terrain color and height was generated using 3D fractal Brownian motion (FBM). 
                                  The water color was created with recursive Perlin noise, animated to look like waves. The moon 
                                  was textured with summed 3D Perlin noise and 3D Worley noise to create illusion of craters. 
@@ -380,18 +384,18 @@
                               </div>
                               <a href="http://carolinelachanski.com/homework-1-noisy-planets-clach/" target="_blank" ><img src="img/projects/planet_thumb.png" class="procedural-thumb"></a>
                            </div>
-                           <div class="col-md-6" class="code-projects">
+                           <div class="col-md-6">
                               <h4>Realtime Sphere Tracing of Implicit Surfaces</h4>
-                              <p align="justify">Animated scene made entirely in the fragment shader. Features real-time sphere tracing of implicit surfaces using signed distance functions, domain repetition, and specular reflections. It's also a toaster mobile.</p>
+                              <p>Animated scene made entirely in the fragment shader. Features real-time sphere tracing of implicit surfaces using signed distance functions, domain repetition, and specular reflections. It's also a toaster mobile.</p>
                               <div class="col button-container">
                                  <a href="https://github.com/clach/homework-2-implicit-surfaces-clach" target="_blank" 
                                     class="fa fa-github fa-on-white"></a>
                               </div>
                               <a href="http://carolinelachanski.com/homework-2-implicit-surfaces-clach/" target="_blank" ><img src="img/projects/toaster_thumb.png" class="procedural-thumb"></a>
                            </div>
-                           <div class="col-md-6" class="code-projects">
+                           <div class="col-md-6">
                               <h4>Interactive Particle System</h4>
-                              <p align="justify">An interactive particle system. Their initial position and velocity are randomized, and their movement is controlled by Euler integration. The particles are colored based on their distance to the origin, or a target point if there is one. The user can left click to attract particles and right click to repel them. The user can also select from several meshes to attract the particles to.</p>
+                              <p>An interactive particle system. Their initial position and velocity are randomized, and their movement is controlled by Euler integration. The particles are colored based on their distance to the origin, or a target point if there is one. The user can left click to attract particles and right click to repel them. The user can also select from several meshes to attract the particles to.</p>
                               <div class="col button-container">
                                  <a href="https://github.com/clach/homework-6-particle-system-clach" target="_blank" 
                                     class="fa fa-github fa-on-white"></a>
@@ -409,9 +413,9 @@
                            <div class="col-sm-2">
                            </div>
                            <div class="col-lg-8">
-                              <h4 align="justify">VR Cave Explorer</h4>
+                              <h4>VR Cave Explorer</h4>
                               <h5>Blender, Unity, C# (Spring 2019)</h5>
-                              <p align="justify">Final project for Environmental Animation course. The goal was to research an 
+                              <p>Final project for Environmental Animation course. The goal was to research an 
                                  interesting technique and use it to create an animation: I chose to explore the rendering of 
                                  stereoscopic, 360-video to make animations for a small, immersive, choose-your-own adventure VR game on the Oculus Go. All environments were modeled in Blender, then rendered as 2k stereoscopic, panoramic frames, which were made into animations using Adobe After Effects. The game was assembled using Unity, using the animations as the render textures on a sphere, creating the effect of being surrounded by the environments. The 2D UI assets were made with Adobe Illustrator and Photoshop.<br><br>See the first half of the video for a playthrough in the Oculus Go, and the second half of the video for the rendered animations.
                               </p>
@@ -443,9 +447,9 @@
                      <div class="gallery">
                         <div class="row">
                            <div class="col-sm-6">
-                              <h4 align="justify">Mini Minecraft</h4>
+                              <h4>Mini Minecraft</h4>
                               <h5>C++, OpenGL (Fall 2017)</h5>
-                              <p align="justify">Three-person project to develop Minecraft-inspired game. Implemented procedurally generated terrain with 2D fractal Brownian motion, raymarching and ray-cube intersections for interaction with environment, A* algorithm to determine movement of non-player character, distance fog, and multithreading in terrain generation.</p>
+                              <p>Three-person project to develop Minecraft-inspired game. Implemented procedurally generated terrain with 2D fractal Brownian motion, raymarching and ray-cube intersections for interaction with environment, A* algorithm to determine movement of non-player character, distance fog, and multithreading in terrain generation.</p>
                            </div>
                            <div class="col-sm-6">
                               <img src="img/projects/minecraftGif.gif" class="embedded-image">
@@ -459,9 +463,9 @@
                      <div class="gallery">
                         <div class="row">
                            <div class="col-sm-6">
-                              <h4 align="justify">Mini Maya</h4>
+                              <h4>Mini Maya</h4>
                               <h5>C++, OpenGL, Qt (Fall 2017)</h5>
-                              <p align="justify">Implemented Maya-inspired mesh editor with GUI allowing for import of OBJ files, half-edge mesh manipulations such as face extrusion, Catmull-Clark subdivision, face triangulation, and skeleton skinning.</p>
+                              <p>Implemented Maya-inspired mesh editor with GUI allowing for import of OBJ files, half-edge mesh manipulations such as face extrusion, Catmull-Clark subdivision, face triangulation, and skeleton skinning.</p>
                            </div>
                            <div class="col-sm-6">
                               <img src="img/projects/miniMaya.gif" class="embedded-image">
@@ -478,6 +482,7 @@
          </div>
       </div>
       <!-- end of projects-->
+      </div>
       <!-- jQuery -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!-- Bootstrap -->
